@@ -1,5 +1,5 @@
 import  {useCallback, useEffect, useRef, useState} from 'react';
-import Toggle from './toggle';
+
 import Link from "next/link";
 import {dsnCN} from "../../hooks/helper";
 import {LinkProps} from "next/dist/client/link";
@@ -72,15 +72,7 @@ function Navbar({children, textOpen, textMenu, textClose, hamburger}) {
 
             {children}
 
-            {typeNave && <Toggle
-                textOpen={textOpen}
-                textMenu={textMenu}
-                textClose={textClose}
-                targetNav={nav}
-                reserved={reserved}
-                setReserved={setReserved}
-                removeOpenMenu={removeOpenMenu}
-            />}
+            
 
 
         </header>
@@ -138,13 +130,9 @@ export const Nav = ({children, className, ...restProps}) => {
 export const ItemLink = ({children, ...restProps}: LinkProps) => {
 
     return (
-        <li className="nav-item" onClick={handleClickCloseMenu}>
-            <Link  {...restProps}>
-            <span className="overflow">
-                {children}
-            </span>
-            </Link>
-        </li>
+        <>
+          
+        </>
     );
 };
 Nav.Link = ItemLink;

@@ -44,7 +44,7 @@ function ButtonPopup({
                         data-fancybox={group || ''}
                         data-width={width}
                         data-height={height}
-                        className={dsnCN("play-btn d-flex align-items-center justify-content-center text-center vid", className)}
+                        className={dsnCN("play-btn d-flex align-items-center justify-content-center text-center ", className)}
                         {...restProps} >
                 <span className="text">{textBefore}</span>
                 <span

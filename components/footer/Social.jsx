@@ -1,9 +1,9 @@
 import {dsnCN} from "../../hooks/helper";
 
 
-const socialContent = [
-    {name: "Instagram.", href: "#0"},
-    {name: "Linkedin. ", href: "#0"},
+const socialContent = [    
+    {name: "Linkedin. ", href: "http://linkedin.com/in/futuro-rocha-38a1692aa"},
+    {name: "Youtube. ", href: "http://www.youtube.com/@futurorocha"},
    
 ];
 

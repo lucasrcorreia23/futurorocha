@@ -96,11 +96,11 @@ export const ServiceGrid = ({masonry, iconOption, className, ...props}: serviceG
 
     if (masonry)
         return <div className={dsnCN("dsn-isotope ", className)} ref={iso}>
-            <Service className={"dsn-grid-masonry"} iconOption={iconOption} {...props} tag={DsnGrid}/>
+            <Service className={"dsn-grid-masonry"}  {...props} tag={DsnGrid}/>
         </div>
 
 
-    return <Service className={className} iconOption={iconOption}  {...props} tag={DsnGrid}/>
+    return <Service className={className}   {...props} tag={DsnGrid}/>
 }
 
 Service.grid = ServiceGrid;

@@ -47,10 +47,11 @@ function HeroSection({className, ...restProps}) {
                     </FadeUpTrigger>
                     <div className="d-flex justify-content-end align-items-center">
                         <Button
-                            href={"#"}
+                            href={"https://www.amazon.com.br/Contrafa%C3%A7%C3%A3o-marca-jurisprudencial-indenizat%C3%B3rio-jurisprud%C3%AAncia/dp/6525293812/ref=sr_1_1?crid=2W7MNALYOE6FK&dib=eyJ2IjoiMSJ9.-rg6KYQ47d_llUXXMZWSZA.XH2ZWwTAxu64FbJeOZrtoeCBkN4nKMfbvhdobDq222c&dib_tag=se&keywords=arno+ribeiro+rocha&qid=1715980297&sprefix=%2Caps%2C194&sr=8-1"}
                             className="mr-15 line-head"
                             borderStyle={"border-color-heading-color"}
                             borderRadius
+                            target={"_blank"}
                           
                         >
                             Adquira o seu exemplar agora

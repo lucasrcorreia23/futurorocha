@@ -25,26 +25,16 @@ import ButtonPopup from "/components/button-popup/ButtonPopup";
 import { ServiceGrid } from "../components/services/Service";
 import NextPage from "../components/next/NextPage";
 import Footer from "../components/footer/Footer";
-import ModalContact from "../components/model-right/ModalContact";
+
 import Head from "next/head";
 import Image from 'next/image'
 
 const heroData = {
-  title: `We help to create visual strategies`,
-  descTitle: `capabilities our company`,
-  subtitle: `The Best Choice For Your Successful Business!`,
-  description: `We always stay with our clients and respect their business. We deliver 100% and provide instant response.`,
-  descriptionTow: `Our clients describe us as a product team which
-                      creates amazing UI/UX experiences, by crafting top-notch user
-                      experience.`,
-  heroImage: '/img/about-intro.jpg',
-  link: {
-      href: "/services"
-  },
+  
   textButton: `View More <span>⟶</span>`,
   img: {src: "/img/futurorocha/stepsection.jpg", alt: ""},
   video: {
-      href: "https://www.youtube.com/watch?v=D48T0wNm96w",
+      href: "https://www.youtube.com/watch?v=eyxOWd7Nn40",
       textBefore: "Iniciar",
       textAfter: "Vídeo",
 
@@ -57,7 +47,7 @@ const dataSlider = [
     logo: "/img/futurorocha/logotipo.png",
     title: `Especialistas em Propriedade Intelectual:<br/>descubra como proteger e potencializar a sua marca.`,
     href: {
-      href: "#0",
+      href: "https://api.whatsapp.com/send?phone=5548988275155",
       target: "_blank",
       rel: "nofollow",
     },
@@ -73,7 +63,7 @@ const dataSlider = [
     title: `O futuro da sua<br/> marca começa aqui.`,
 
     href: {
-      href: "#0",
+      href: "https://api.whatsapp.com/send?phone=5548988275155",
       target: "_blank",
       rel: "nofollow",
     },
@@ -87,7 +77,7 @@ const dataSlider = [
     logo: "/img/futurorocha/logotipo.png",
     title: `Proteja e potencialize <br/>o seu principal ativo, sua marca.`,
     href: {
-      href: "#0",
+      href: "https://api.whatsapp.com/send?phone=5548988275155",
       target: "_blank",
       rel: "nofollow",
     },
@@ -145,7 +135,7 @@ function Home() {
           rowGapMobile={0}
         >
           <div className="p-relative mb-lg-section">
-          <div className="video-inner p-relative h-full v-dark-head ">
+            <div className="video-inner p-relative h-full v-dark-head ">
                 <ParallaxImage {...heroData.img} height={""} overlay={2} sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               20vw"/>
@@ -319,57 +309,57 @@ na Futuro Rocha
           data={[
             {
               icon: "",
-              title: "Imersão Profunda",
+              title: "Pesquisa de Viabilidade e Análise de Marca",
               description:
-                "Não somos apenas prestadores de serviços; mergulhamos profundamente na essência de cada marca para compreender suas origens e direcionamento estratégico.",
+                "Realizamos pesquisas de anterioridade abrangentes para verificar a disponibilidade e registrabilidade da sua marca. Nossa análise de risco fornece recomendações estratégicas fundamentadas para o registro da marca, garantindo uma abordagem sólida e orientada para o sucesso.",
             },
             {
               icon: "",
-              title: "Especialistas em Branding e Design",
+              title: "Registro de Marcas",
               description:
-                "Somos uma equipe de profissionais apaixonados por branding e design, focados em fornecer soluções personalizadas e inovadoras para cada desafio.",
+                "Preparamos e submetemos pedidos de registro de marcas no INPI e em outros órgãos competentes. Nosso acompanhamento minucioso do processo de registro inclui a resposta ágil a exigências e oposições, assegurando uma tramitação eficiente e sem contratempos.",
             },
             {
               icon: "",
-              title: "Conexão Humana",
+              title: "Renovação e Manutenção de Marcas",
               description:
-                " Valorizamos os relacionamentos e a colaboração estreita com nossos clientes, trabalhando lado a lado para atingir metas e resultados excepcionais.",
+                "Gerenciamos e monitoramos os prazos de renovação de marcas, garantindo sua manutenção contínua e proteção a longo prazo. Nossa abordagem proativa ajuda a evitar a perda de direitos e a manter sua marca sempre atualizada e resguardada.",
             },
             {
               icon: "",
-              title: "Imersão Profunda",
+              title: "Gestão de Portfólio de Marcas",
               description:
-                "Não somos apenas prestadores de serviços; mergulhamos profundamente na essência de cada marca para compreender suas origens e direcionamento estratégico.",
+                "Avaliamos e gerenciamos seu portfólio de marcas, desenvolvendo estratégias personalizadas de proteção e valorização. Nossa expertise em gestão de marcas garante uma abordagem abrangente e eficaz para maximizar o potencial de seus ativos intangíveis.",
             },
             {
               icon: "",
-              title: "Especialistas em Branding e Design",
+              title: "Conflitos Marcários Administrativos e Judiciais",
               description:
-                "Somos uma equipe de profissionais apaixonados por branding e design, focados em fornecer soluções personalizadas e inovadoras para cada desafio.",
+                "Oferecemos representação qualificada em processos administrativos e judiciais relacionados a marcas, incluindo oposições, nulidades e ações de infração. Nossa equipe jurídica experiente está preparada para defender seus interesses com determinação e habilidade.",
             },
             {
               icon: "",
-              title: "Conexão Humana",
+              title: "Due Diligence e Auditoria de Marcas",
               description:
-                " Valorizamos os relacionamentos e a colaboração estreita com nossos clientes, trabalhando lado a lado para atingir metas e resultados excepcionais.",
+                "Realizamos due diligence para avaliar a situação jurídica e o valor comercial de marcas em transações comerciais, como fusões, aquisições e licenciamentos. Nossa auditoria detalhada oferece insights fundamentais para tomar decisões informadas e estratégicas.",
             },
             {
               icon: "",
-              title: "Imersão Profunda",
+              title: "Contratos de Licenciamento e Transferência de Tecnologia",
               description:
-                "Não somos apenas prestadores de serviços; mergulhamos profundamente na essência de cada marca para compreender suas origens e direcionamento estratégico.",
+                "Negociamos e redigimos contratos de licenciamento de marcas e transferência de tecnologia para garantir a proteção e exploração adequada de seus ativos intangíveis. Nossa expertise em contratos assegura acordos sólidos e vantajosos para todas as partes envolvidas.",
             },
             {
               icon: "",
-              title: "Especialistas em Branding e Design",
+              title: "Proteção Internacional de Marcas",
               description:
-                "Somos uma equipe de profissionais apaixonados por branding e design, focados em fornecer soluções personalizadas e inovadoras para cada desafio.",
+                "Oferecemos assessoria na proteção internacional de marcas, incluindo o registro em outros países e a coordenação de ações em jurisdições estrangeiras. Nosso suporte global assegura uma proteção abrangente e consistente de sua marca em nível internacional.",
             },
             {
               icon: "",
-              title: "Conexão Humana",
+              title: "Educação e Treinamento",
               description:
-                " Valorizamos os relacionamentos e a colaboração estreita com nossos clientes, trabalhando lado a lado para atingir metas e resultados excepcionais.",
+                " Promovemos cursos, palestras e treinamentos sobre questões relacionadas a direito marcário e proteção de marcas para clientes e profissionais do setor. Nosso compromisso com a educação oferece conhecimento e capacitação para proteger efetivamente sua marca.",
             },
           ]}
         />

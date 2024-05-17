@@ -108,7 +108,7 @@ function LoadingPage({className, glitchLogo = true}: LoadingProps) {
                 <p className="loading-count v-middle">{progressValue.toFixed(0)}</p>
             </div>
 
-            <div className="loading-text text-uppercase mt-30 dsn-container"><span>Calma, ja termina :)</span></div>
+            <div className="loading-text text-uppercase mt-30 dsn-container"><span>Carregando...</span></div>
             <div className="bg-load background-section d-flex align-items-end">
                 <svg className="dsn-separator-bottom dsn-icon-assistant-color" width="100%" height="100%"
                      viewBox="0 0 100 10"

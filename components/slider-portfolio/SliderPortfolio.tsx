@@ -86,7 +86,7 @@ function SliderPortfolio({
               if (swiperRef.current) {
                 swiperRef.current.autoplay.start(); // Inicia o autoplay diretamente na instância do Swiper
               }
-            }, 5000); // 10 segundos
+            }, 15000); // 10 segundos
         
             return () => clearTimeout(autoplayTimeout);
           }, []);
@@ -211,7 +211,7 @@ function SliderPortfolio({
         ...optionSlider,
         onInit: init,
         onSlideChange: swiperChange,
-        autoplay: autoplay ? { delay: 10000} : false, // Configuração inicial do autoplay
+        autoplay: autoplay ? { delay: 15000} : false, // Configuração inicial do autoplay
     onSwiper: (swiper) => (swiperRef.current = swiper), // Armazena a referência ao Swiper
     }
 

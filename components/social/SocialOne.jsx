@@ -1,13 +1,14 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faShareAlt} from "@fortawesome/free-solid-svg-icons/faShareAlt";
-import {faFacebookF, faTwitter, faInstagram, faDribbble, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import {faFacebookF, faTwitter, faInstagram, faYoutube, faDribbble, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {dsnCN} from "../../hooks/helper";
 
 
 const socialData = [
-    {link: "#0", icon: faLinkedin, name: "Lkd"},
-    {link: "#0", icon: faFacebookF, name: "Fb"},
-    {link: "#0", icon: faInstagram, name: "Ig"},
+    {link: "http://linkedin.com/in/futuro-rocha-38a1692aa", icon: faLinkedin, name: "Lkd"},
+    {link: "https://www.facebook.com/profile.php?id=100092284283133&mibextid=ZbWKwL", icon: faFacebookF, name: "Fb"},
+    {link: "https://www.instagram.com/futurorocha?igsh=MWtqZnhtMTEycmcwbA==", icon: faInstagram, name: "Ig"},
+    {link: "http://www.youtube.com/@futurorocha", icon: faYoutube, name: "Yt"},
     
 ];
 

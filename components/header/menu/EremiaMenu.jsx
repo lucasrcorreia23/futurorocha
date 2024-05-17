@@ -147,9 +147,6 @@ const EremiaMenu = ({}) => {
 
 }
 
-EremiaMenu.defaultProps = {
-    hamburger: false
-}
 
 
 export default EremiaMenu;

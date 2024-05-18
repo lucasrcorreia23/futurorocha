@@ -5,7 +5,7 @@ import BgDot from "../header/BgDot";
 const NextContent = {
     title: "Descubra como a Futuro Rocha pode ajudar a sua marca!",
     subtitle: `VAMOS CONVERSAS`,
-    buttonText: "Fala com a gente!"
+    buttonText: "Entre em contato!"
 };
 
 function NextPage({className, ...restProps}) {

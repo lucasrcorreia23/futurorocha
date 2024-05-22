@@ -10,8 +10,8 @@ const data = [
     {src: "/img/futurorocha/parceiros/4.png"},
     {src: "/img/futurorocha/parceiros/5.png"},
     {src: "/img/futurorocha/parceiros/6.png"},
-    {src: "/img/futurorocha/parceiros/1.png"},
-    {src: "/img/futurorocha/parceiros/3.png"},
+    {src: "/img/futurorocha/parceiros/7.png"},
+    {src: "/img/futurorocha/parceiros/8.png"},
 ];
 
 

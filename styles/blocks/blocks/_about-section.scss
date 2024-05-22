@@ -19,7 +19,7 @@
   .title-move {
     @include media_991(min) {
       position: absolute;
-      right: -120px;
+      right: 0;
       top: 0;
       text-align: right;
     }

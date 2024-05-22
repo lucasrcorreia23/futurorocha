@@ -152,7 +152,7 @@ function Home() {
                   defaultSpace={false}
                 >
                   Registro de Marca<br/>
-na Futuro Rocha
+ na Futuro Rocha
                 </TitleSection>
                 <Accordion>
                   <AccordionItem title="Consulta de Viabilidade" active number={1}>

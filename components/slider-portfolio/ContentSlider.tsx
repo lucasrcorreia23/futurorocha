@@ -27,7 +27,7 @@ function ContentSlider({
                      ref={ref}>
                     {(item.subtitle) && <p className="description max-w570 mb-15">{item.subtitle}</p>}
                     {(item.category && hasCategory) && <MetaPost category={item.category} separate={separateCat}/>}
-                    <Image src={item.logo} alt={`Small image for slide`} className="mb-20 banner-content" width={120} height={120} />
+                    <Image src={item.logo} alt={`Small image for slide`} className="mb-20 title " width={100} height={100} />
                     <h1 className="title" >
                         {
                             item.slug ? <DsnLink href={getPortfolioLink(item)} dangerouslySetInnerHTML={{__html: item.title}}

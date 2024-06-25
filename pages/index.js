@@ -34,7 +34,7 @@ const heroData = {
   textButton: `View More <span>⟶</span>`,
   img: {src: "/img/futurorocha/stepsection.jpg", alt: ""},
   video: {
-      href: "https://www.youtube.com/watch?v=eyxOWd7Nn40",
+      href: "https://www.youtube.com/watch?v=Hakbxo3wuJg",
       textBefore: "Iniciar",
       textAfter: "Vídeo",
 
@@ -47,7 +47,7 @@ const dataSlider = [
     logo: "/img/futurorocha/logotipo.png",
     title: `Especialistas em Propriedade Intelectual:<br/>descubra como proteger e potencializar a sua marca.`,
     href: {
-      href: "https://api.whatsapp.com/send?phone=5548988275155",
+      href: "https://api.whatsapp.com/send?phone=554888405715",
       target: "_blank",
       rel: "nofollow",
     },
@@ -63,7 +63,7 @@ const dataSlider = [
     title: `O futuro da sua<br/> marca começa aqui.`,
 
     href: {
-      href: "https://api.whatsapp.com/send?phone=5548988275155",
+      href: "https://api.whatsapp.com/send?phone=554888405715",
       target: "_blank",
       rel: "nofollow",
     },
@@ -77,7 +77,7 @@ const dataSlider = [
     logo: "/img/futurorocha/logotipo.png",
     title: `Proteja e potencialize <br/>o seu principal ativo, sua marca.`,
     href: {
-      href: "https://api.whatsapp.com/send?phone=5548988275155",
+      href: "https://api.whatsapp.com/send?phone=554888405715",
       target: "_blank",
       rel: "nofollow",
     },

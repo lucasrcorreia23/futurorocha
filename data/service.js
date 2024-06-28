@@ -57,7 +57,7 @@ const servicesDetails = [
   </g>
 </svg>,
         title: "Eficiência e Agilidade",
-        description: "Nosso objetivo é otimizar o tempo do processo por meio de um estudo",
+        description: "Nosso objetivo é otimizar o tempo do processo por meio de um estudo de viabilidade de marca preliminar",
     },
     {
         icon: <svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 163 162.77">

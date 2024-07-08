@@ -7,7 +7,7 @@ import "splitting/dist/splitting.css";
 import "splitting/dist/splitting-cells.css";
 import '../styles/style.scss';
 
-
+import Script from 'next/script';
 import {Back, gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
 import {ScrollToPlugin} from 'gsap/dist/ScrollToPlugin';
@@ -128,11 +128,28 @@ function MyApp({Component, pageProps}) {
             <link rel="icon" href="/img/favicon.ico"/>
             <link rel="apple-touch-icon" href="/img/favicon.ico"/>
         </Head>
+        
         <Provider store={store}>
 
             <div id="__dsn_content" className={colorPage}>
                 <LoadingPage/>
                 <EremiaMenu hamburger/>
+                <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-KK8NV0W3NW"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-KK8NV0W3NW"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-KK8NV0W3NW');
+        `}
+      </Script>
                 <Component  {...pageProps} />
                 <OptionTheme lineTheme={[creativeLine, setCreativeLine]} pageColor={[colorPage, setColorPage]}/>
                 <RightScrollTop options={{duration: 1.5, ease: "power4.inOut"}}/>

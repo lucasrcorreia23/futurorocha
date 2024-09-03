@@ -178,3 +178,13 @@ margin: auto;
   font-size: 32px!important;
 
 }
+#robbu-whatsapp-button{
+  bottom: 140px!important;
+  z-index:10!important;
+}
+#robbu-whatsapp-button:not(.left){
+  right:16px!important;
+}
+#robbu-whatsapp-button>.rwb-tooltip{
+  color:#fff
+}

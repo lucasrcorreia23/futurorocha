@@ -9,6 +9,7 @@ import ModalRight from "../components/model-right/ModalRight.jsx";
 import {useSelector} from "react-redux";
 import {RootState} from "../features/store";
 import {ScrollbarOptions} from "smooth-scrollbar/interfaces";
+import Image from 'next/image.js';
 
 
 interface LayoutProps {
@@ -68,6 +69,10 @@ function Layout({className, children, tag: Tag = "div", activeScrollbar, options
     return (
         <Tag id="main_layout"
              className={dsnCN( 'background-main', className)} {...restProps}>
+                <a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=48988405715&text=Ola%20gostaria%20de%20saber%20sobre...">
+  <div class="rwb-tooltip">Futuro Rocha</div>
+  <Image src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg" alt="Whatsapp" width={32} height={32}/>
+</a>
             <div className={dsnCN("main-content", activeScrollbar && "dsn-main-scrollbar")}>
                 {activeScrollbar ? <MainScrollBar options={optionsScrollbar}><div id="main-content" className="p-relative">{children}</div></MainScrollBar> : <div id="main-content" className="p-relative">{children}</div>}
             </div>

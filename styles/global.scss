@@ -81,6 +81,13 @@
   height: calc(100% + var(--margin-padding));
 }
 
+#robbu-whatsapp-button{
+  bottom: 140px!important;
+  z-index:199!important;
+}
+#robbu-whatsapp-button:not(.left){
+  right:12px!important;
+}
 
 
 .dsn-text-shadow {

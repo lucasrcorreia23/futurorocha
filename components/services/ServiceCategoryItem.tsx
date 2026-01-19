@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { dsnCN } from "../../hooks/helper";
 import { gsap } from "gsap";
 
@@ -10,10 +10,11 @@ export interface ServiceCategoryItemProps {
     services: string[];
   };
   index: number;
+  isExpanded: boolean;
+  onToggle: () => void;
 }
 
-function ServiceCategoryItem({ category, index }: ServiceCategoryItemProps) {
-  const [isExpanded, setIsExpanded] = useState(false);
+function ServiceCategoryItem({ category, index, isExpanded, onToggle }: ServiceCategoryItemProps) {
   const servicesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -47,7 +48,7 @@ function ServiceCategoryItem({ category, index }: ServiceCategoryItemProps) {
       <div className="service-category-item-inner background-section p-relative">
         <div
           className="service-category-header d-flex align-items-center justify-content-between p-relative"
-          onClick={() => setIsExpanded(!isExpanded)}
+          onClick={onToggle}
         >
           <div className="service-category-content">
             <span className="service-category-number">{String(index + 1).padStart(2, '0')}</span>

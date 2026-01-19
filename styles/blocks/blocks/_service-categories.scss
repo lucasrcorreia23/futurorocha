@@ -28,11 +28,18 @@
       padding: 30px;
       cursor: pointer;
       transition: all 0.3s ease;
-      min-height: 120px;
+      height: 140px;
+      display: flex;
+      align-items: center;
+
+      @include media_991() {
+        height: 130px;
+        padding: 25px 20px;
+      }
 
       @include media_575() {
         padding: 20px;
-        min-height: auto;
+        height: 120px;
       }
 
       &:hover {
@@ -45,6 +52,7 @@
       align-items: flex-start;
       gap: 20px;
       flex: 1;
+      width: 100%;
 
       @include media_575() {
         gap: 15px;
@@ -57,7 +65,8 @@
       color: $theme-color;
       line-height: 1;
       min-width: 40px;
-      padding-top: 4px;
+      align-self: flex-start;
+      padding-top: 2px;
 
       @include media_575() {
         font-size: 16px;
@@ -76,6 +85,10 @@
       color: $heading-color;
       font-weight: 600;
 
+      @include media_991() {
+        font-size: 17px;
+      }
+
       @include media_575() {
         font-size: 16px;
       }
@@ -87,6 +100,10 @@
       color: $body-color;
       margin: 0;
       opacity: 0.8;
+
+      @include media_575() {
+        font-size: 13px;
+      }
     }
 
     .service-category-toggle {
@@ -100,6 +117,7 @@
       transition: all 0.3s ease;
       flex-shrink: 0;
       margin-left: 15px;
+      align-self: center;
 
       @include media_575() {
         width: 35px;

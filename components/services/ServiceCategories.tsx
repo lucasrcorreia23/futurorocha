@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { dsnCN } from "../../hooks/helper";
 import DsnGrid from "../../layout/DsnGrid";
 import ServiceCategoryItem from "./ServiceCategoryItem";
@@ -18,6 +19,12 @@ function ServiceCategories({
   colMobile = 1,
   colGap = 30,
 }: ServiceCategoriesProps) {
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+
+  const handleToggle = (index: number) => {
+    setExpandedIndex(expandedIndex === index ? null : index);
+  };
+
   return (
     <div className={dsnCN("service-categories", className)}>
       <DsnGrid
@@ -32,6 +39,8 @@ function ServiceCategories({
             key={category.id}
             category={category}
             index={index}
+            isExpanded={expandedIndex === index}
+            onToggle={() => handleToggle(index)}
           />
         ))}
       </DsnGrid>

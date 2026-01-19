@@ -70,7 +70,7 @@ function Layout({className, children, tag: Tag = "div", activeScrollbar, options
         <Tag id="main_layout"
              className={dsnCN( 'background-main', className)} {...restProps}>
                 <a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=48988405715&text=Ola%20gostaria%20de%20saber%20sobre...">
-  <div class="rwb-tooltip">Futuro Rocha</div>
+  <div className="rwb-tooltip">Futuro Rocha</div>
   <Image src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg" alt="Whatsapp" width={32} height={32}/>
 </a>
             <div className={dsnCN("main-content", activeScrollbar && "dsn-main-scrollbar")}>

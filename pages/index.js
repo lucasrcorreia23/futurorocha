@@ -23,6 +23,7 @@ import ButtonPopup from "/components/button-popup/ButtonPopup";
 
 
 import { ServiceGrid } from "../components/services/Service";
+import ServiceCategories from "../components/services/ServiceCategories";
 import NextPage from "../components/next/NextPage";
 import Footer from "../components/footer/Footer";
 
@@ -97,10 +98,7 @@ function Home() {
 
   return (
     <Layout>
-      <a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=48988405715&text=Ola%20gostaria%20de%20saber%20sobre...">
-  <div class="rwb-tooltip">Futuro Rocha</div>
-  <Image src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg" alt="Whatsapp" width={32} height={32}/>
-</a>
+      
       <Head>
         <title>Futuro Rocha</title>
       </Head>
@@ -279,93 +277,31 @@ function Home() {
       {/*End testimonial Section*/}
 
       {/*<!-- ========== End box-gallery-vertical Section ========== */}
-      <section className="container  section-margin" data-dsn-title="O que fazemos">
-        
-        <DsnGrid col={2} colTablet={1} className=" mb-50">
-        
+      <section className="container section-margin" data-dsn-title="O que fazemos">
+        <DsnGrid col={2} colTablet={1} className="mb-50">
           <div className="box-left">
-          <TitleSection
-          className={` second-title mb-15`}
-          description={"O QUE E COMO FAZEMOS?"}
-        >
-          
-        </TitleSection>
-        <h4>Não nos limitamos à proteção dos ativos criativos de nossos clientes.</h4>
+            <TitleSection
+              className={`second-title mb-15`}
+              description={"O QUE E COMO FAZEMOS?"}
+            >
+            </TitleSection>
+            <h4>Não nos limitamos à proteção dos ativos criativos de nossos clientes.</h4>
           </div>
-          <div className="box-right  justify-content-end d-flex flex-column">
-            <p className="max-w570 dsn-up mb-15 ">
-            Visualizamos o futuro com a perspectiva de amplificar e potencializar esses ativos, criando oportunidades para novos e lucrativos negócios.
+          <div className="box-right justify-content-end d-flex flex-column">
+            <p className="max-w570 dsn-up mb-15">
+              Visualizamos o futuro com a perspectiva de amplificar e potencializar esses ativos, criando oportunidades para novos e lucrativos negócios.
             </p>
-
             <p className="max-w570 dsn-up">
-            <b>Aqui estão alguns dos serviços que prestamos:</b>
+              <b>Aqui estão alguns dos serviços que prestamos:</b>
             </p>
           </div>
         </DsnGrid>
-        <ServiceGrid
-          className="icon-left border-top pt-50 align-items-start p-0"
-          iconOption={{
-            className: "background-main p-15 align-self-center",
-          }}
-          col={3}
+        <ServiceCategories
+          className="border-top pt-50"
+          col={2}
           colTablet={1}
-          colGap={75}
-          data={[
-            {
-              icon: "",
-              title: "Pesquisa de Viabilidade e Análise de Marca",
-              description:
-                "Realizamos pesquisas de anterioridade abrangentes para verificar a disponibilidade e registrabilidade da sua marca. Nossa análise de risco fornece recomendações estratégicas fundamentadas para o registro da marca, garantindo uma abordagem sólida e orientada para o sucesso.",
-            },
-            {
-              icon: "",
-              title: "Registro de Marcas",
-              description:
-                "Preparamos e submetemos pedidos de registro de marcas no INPI e em outros órgãos competentes. Nosso acompanhamento minucioso do processo de registro inclui a resposta ágil a exigências e oposições, assegurando uma tramitação eficiente e sem contratempos.",
-            },
-            {
-              icon: "",
-              title: "Renovação e Manutenção de Marcas",
-              description:
-                "Gerenciamos e monitoramos os prazos de renovação de marcas, garantindo sua manutenção contínua e proteção a longo prazo. Nossa abordagem proativa ajuda a evitar a perda de direitos e a manter sua marca sempre atualizada e resguardada.",
-            },
-            {
-              icon: "",
-              title: "Gestão de Portfólio de Marcas",
-              description:
-                "Avaliamos e gerenciamos seu portfólio de marcas, desenvolvendo estratégias personalizadas de proteção e valorização. Nossa expertise em gestão de marcas garante uma abordagem abrangente e eficaz para maximizar o potencial de seus ativos intangíveis.",
-            },
-            {
-              icon: "",
-              title: "Conflitos Marcários Administrativos e Judiciais",
-              description:
-                "Oferecemos representação qualificada em processos administrativos e judiciais relacionados a marcas, incluindo oposições, nulidades e ações de infração. Nossa equipe jurídica experiente está preparada para defender seus interesses com determinação e habilidade.",
-            },
-            {
-              icon: "",
-              title: "Due Diligence e Auditoria de Marcas",
-              description:
-                "Realizamos due diligence para avaliar a situação jurídica e o valor comercial de marcas em transações comerciais, como fusões, aquisições e licenciamentos. Nossa auditoria detalhada oferece insights fundamentais para tomar decisões informadas e estratégicas.",
-            },
-            {
-              icon: "",
-              title: "Contratos de Licenciamento e Transferência de Tecnologia",
-              description:
-                "Negociamos e redigimos contratos de licenciamento de marcas e transferência de tecnologia para garantir a proteção e exploração adequada de seus ativos intangíveis. Nossa expertise em contratos assegura acordos sólidos e vantajosos para todas as partes envolvidas.",
-            },
-            {
-              icon: "",
-              title: "Proteção Internacional de Marcas",
-              description:
-                "Oferecemos assessoria na proteção internacional de marcas, incluindo o registro em outros países e a coordenação de ações em jurisdições estrangeiras. Nosso suporte global assegura uma proteção abrangente e consistente de sua marca em nível internacional.",
-            },
-            {
-              icon: "",
-              title: "Educação e Treinamento",
-              description:
-                " Promovemos cursos, palestras e treinamentos sobre questões relacionadas a direito marcário e proteção de marcas para clientes e profissionais do setor. Nosso compromisso com a educação oferece conhecimento e capacitação para proteger efetivamente sua marca.",
-            },
-          ]}
+          colMobile={1}
+          colGap={30}
         />
       </section>
 

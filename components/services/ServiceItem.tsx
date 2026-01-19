@@ -20,7 +20,7 @@ export interface ServiceItemProps {
 
 function ServiceItem({data, isLine, isCorner, backgroundColor, iconOption, ...restProps}: ServiceItemProps) {
 
-    const {className: classNameIcon} = iconOption || {};
+    const {className: classNameIcon, class: _, ...iconProps} = iconOption || {};
 
 
     return (<div className="services-item p-relative grid-item" {...restProps}>
@@ -41,7 +41,7 @@ function ServiceItem({data, isLine, isCorner, backgroundColor, iconOption, ...re
 
 
             <div className={dsnCN('services-content', backgroundColor)}>
-                <div  {...iconOption} className={dsnCN("icon", classNameIcon)}>
+                <div  {...iconProps} className={dsnCN("icon", classNameIcon)}>
                     {data?.icon}
                 </div>
                 <div className="service-description">

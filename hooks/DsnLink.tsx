@@ -56,8 +56,10 @@ function DsnLink({children, className, href, transitionPage = true, ...restProps
         }
     }, [transitionPage, router, href]);
 
+    // Filter out non-DOM props before passing to Link
+    const { textBefore, textAfter, ...linkProps } = restProps as any;
 
-    return <Link href={href} className={className} {...restProps} ref={ref}>{children}</Link>
+    return <Link href={href} className={className} {...linkProps} ref={ref}>{children}</Link>
 
 }
 

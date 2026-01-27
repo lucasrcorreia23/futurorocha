@@ -46,7 +46,7 @@ const dataSlider = [
   {
     id: 1,
     logo: "/img/futurorocha/logotipo.png",
-    title: `Especialistas em Propriedade Intelectual:<br/>descubra como proteger e potencializar a sua marca.`,
+    title: `Soluções jurídicas estratégicas para ativos<br/>intelectuais, games e inteligência artificial.`,
     href: {
       href: "https://api.whatsapp.com/send?phone=554888405715",
       target: "_blank",
@@ -61,7 +61,7 @@ const dataSlider = [
   {
     id: 2,
     logo: "/img/futurorocha/logotipo.png",
-    title: `O futuro da sua<br/> marca começa aqui.`,
+    title: `Proteção completa para criadores e negócios<br/>da nova economia criativa.`,
 
     href: {
       href: "https://api.whatsapp.com/send?phone=554888405715",
@@ -76,7 +76,7 @@ const dataSlider = [
   {
     id: 3,
     logo: "/img/futurorocha/logotipo.png",
-    title: `Proteja e potencialize <br/>o seu principal ativo, sua marca.`,
+    title: `Segurança jurídica para escalar sua startup<br/>e proteger seus ativos digitais.`,
     href: {
       href: "https://api.whatsapp.com/send?phone=554888405715",
       target: "_blank",
@@ -150,46 +150,45 @@ function Home() {
                 <TitleCover>Futuro Rocha</TitleCover>
                 <TitleSection
                   className={"text-uppercase"}
-                  description={"Passo a passo"}
+                  description={"Inteligência Jurídica Estratégica"}
                   defaultSpace={false}
                 >
-                  Registro de Marca<br/>
- na Futuro Rocha
+                  Jornada de Proteção dos seus Ativos
                 </TitleSection>
                 <Accordion>
-                  <AccordionItem title="Consulta de Viabilidade" active number={1}>
+                  <AccordionItem title="1. Imersão e Diagnóstico de Ativos" active number={1}>
                     <p>
-                    Iniciamos com uma análise de viabilidade para garantir que sua marca seja única e elegível para registro.
+                    Identificamos todos os ativos intangíveis do seu projeto, desde o código de software e algoritmos de IA até marcas e obras criativas.
                     </p>
                   </AccordionItem>
-                  <AccordionItem title="Análise e Estratégia" number={2}>
+                  <AccordionItem title="2. Análise de Viabilidade e Riscos" number={2}>
                     <p>
-                    Nossa equipe especializada realiza uma análise abrangente, desenvolvendo estratégias para otimizar o processo de registro.
+                    Avaliamos a segurança jurídica da operação, verificando conformidade com a LGPD, direitos de terceiros e regras de plataformas digitais.
                     </p>
                   </AccordionItem>
-                  <AccordionItem title="Documentação Necessária" number={3}>
+                  <AccordionItem title="3. Estruturação Jurídica e Negocial" number={3}>
                     <p>
-                    Auxiliamos na preparação e coleta de toda a documentação necessária para o processo, garantindo sua conformidade.
+                    Modelagem jurídica para startups e estúdios, incluindo acordos de sócios (vesting), Term Sheets e proteção societária.
                     </p>
                   </AccordionItem>
-                  <AccordionItem title="Pedido de Registro" number={4}>
+                  <AccordionItem title="4. Engenharia Contratual" number={4}>
                     <p>
-                    Submetemos seu pedido ao INPI - Instituto Nacional da Propriedade Industrial, acompanhando cada etapa do processo.
+                    Elaboração de contratos complexos de licenciamento, cessão de direitos autorais, publishing agreements e contratos de desenvolvimento.
                     </p>
                   </AccordionItem>
-                  <AccordionItem title="Acompanhamento e Resposta a Exigências" number={5}>
+                  <AccordionItem title="5. Blindagem e Proteção Formal" number={5}>
                     <p>
-                    Monitoramos o status do seu pedido e, se necessário, respondemos a quaisquer exigências do INPI para garantir uma tramitação eficiente.
+                    Execução de registros junto ao INPI, Biblioteca Nacional e órgãos de fomento, garantindo a titularidade e exclusividade dos ativos.
                     </p>
                   </AccordionItem>
-                  <AccordionItem title="Concessão do Registro" number={6}>
+                  <AccordionItem title="6. Gestão de Fomento e Incentivos" number={6}>
                     <p>
-                    Finalmente, celebramos a concessão do registro de sua marca, tornando-a legalmente protegida e exclusiva.
+                    Assessoria em editais de inovação (FINEP, BNDES) e aplicação de benefícios como a Lei do Bem para maximizar recursos.
                     </p>
                   </AccordionItem>
-                  <AccordionItem title="Renovação e Manutenção" number={7}>
+                  <AccordionItem title="7. Monitoramento e Defesa Estratégica" number={7}>
                     <p>
-                    Após a concessão, cuidamos da renovação periódica, garantindo a manutenção contínua da proteção de sua marca
+                    Vigilância contínua e atuação em contencioso complexo para proteger seus ativos contra contrafação e infrações digitais.
                     </p>
                   </AccordionItem>
                 </Accordion>
@@ -201,7 +200,7 @@ function Home() {
       {/*End box vertical Section*/}
       {/*Start Service*/}
       <div className="container section-margin" data-dsn-title="Serviços">
-        <TitleSection description={"Serviços"}>
+        <TitleSection description={"Diferenciais"}>
         Por que a <br /> Futuro Rocha?
         </TitleSection>
         <ServiceTow className={"icon-left"} />
@@ -209,7 +208,7 @@ function Home() {
       {/*End Service*/}
       <HeroSection
         className="container section-margin container fill-right-container "
-        data-dsn-title="História"
+        data-dsn-title="Autoridade Técnica"
       />
 
       <ParallaxImage
@@ -227,13 +226,13 @@ function Home() {
       >
         <TitleSection
           className={`align-items-center text-center`}
-          description={"Nossos parceiros"}
+          description={"Confiança e resultados"}
         >
-          Mais do que uma marca, uma parceria
+          Mais do que clientes, parceiros de inovação
         </TitleSection>
         <div className="dsn-up max-w750 mx-auto d-flex align-items-center ">
         <p className="text-center  mb-30">
-        Localizado na cidade de Florianópolis - SC, transcendemos fronteiras, exercendo nossa atuação de forma nacional e internacional. Empresas e clientes em todos os estados do Brasil confiam em nossa capacidade de navegar pelas complexidades da Propriedade Intelectual com confiança e maestria.
+        Localizado em Florianópolis/SC e com atuação nacional e internacional, o Futuro Rocha transcende fronteiras para atuar como o braço jurídico estratégico de empresas e projetos inovadores. Nossa capacidade de navegar pelas complexidades da Propriedade Intelectual garante segurança e maestria para investidores, criadores e startups que constroem o mercado de amanhã.
         </p>
         </div>
 

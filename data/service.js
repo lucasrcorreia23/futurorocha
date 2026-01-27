@@ -13,8 +13,8 @@ const servicesDetails = [
           </g>
         </g>
       </svg>,
-        title: "Especialização",
-        description: "Advogados e profissionais especializados em propriedade intelectual.",
+        title: "1. Expertise em Ecossistemas Digitais",
+        description: "Especialização em ativos intangíveis, Games, IA e Direito Digital de alta complexidade",
     },
     {
         icon: <svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 163 151.92">
@@ -31,8 +31,8 @@ const servicesDetails = [
           </g>
         </g>
       </svg>,
-        title: "Acompanhamento do processo",
-        description: "Fornecemos suporte personalizado em todas as etapas do processo.",
+        title: "2. Suporte Integral ao Negócio",
+        description: "Atuação 360º que conecta o jurídico à estratégia empresarial e expansão de mercado.",
     },
     {
         icon:
@@ -56,8 +56,8 @@ const servicesDetails = [
     </g>
   </g>
 </svg>,
-        title: "Eficiência e Agilidade",
-        description: "Nosso objetivo é otimizar o tempo do processo por meio de um estudo de viabilidade de marca preliminar",
+        title: "3. Agilidade e Governança",
+        description: "Foco em escalabilidade via auditorias de conformidade (LGPD) e due diligence de ativos.",
     },
     {
         icon: <svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 163 162.77">
@@ -72,8 +72,8 @@ const servicesDetails = [
         </g>
       </g>
     </svg>,
-        title: "Vigilância Contínua",
-        description: "Após o registro, oferecemos serviços para garantia a proteção contínua de sua marca.",
+        title: "4. Defesa de Ativos Digitais",
+        description: "Vigilância e recuperação de contas, perfis e combate à concorrência desleal em rede.",
     },
     {
         icon: <svg enableBackground="new 0 0 300 300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">

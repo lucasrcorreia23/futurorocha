@@ -8,10 +8,10 @@ import FadeUpTrigger from "../../animation/FadeUpTrigger";
 import Button from '../button/Button';
 
 const HeroContent = {
-    title: "Fundador:<br/> <i><a target='_blank' href='https://www.linkedin.com/in/arno-ribeiro-rocha-84989232/'>Arno Ribeiro Rocha</a></i>",
+    title: "Quem somos?",
     subtitle: ``,
-    description: `À frente do escritório Futuro Rocha está o Advogado e Mestre em Propriedade Intelectual, Dr. Arno Ribeiro Rocha. Sua trajetória é marcada pela experiência e anos de atuação, sendo também o autor do notável livro "Contrafação de Marca", consolidando sua posição como uma autoridade na área.<br/><br/>
-    Descubra o universo da contrafação de marcas com nosso livro, que oferece insights valiosos sobre as decisões do Tribunal de Justiça de Santa Catarina. Com contribuições de renomados especialistas, este livro é uma leitura essencial para entender os desafios e nuances da proteção de marcas.
+    description: `Sob a liderança do Dr. Arno Ribeiro Rocha — Mestre em Propriedade Intelectual e autor da obra de referência "Contrafação de Marca" — a Futuro Rocha transcende o registro burocrático para atuar na arquitetura jurídica de negócios disruptivos. Unimos mais de uma década de experiência prática à dinâmica da nova economia, transformando o Direito em uma ferramenta de monetização e vantagem competitiva para nossos parceiros.<br/><br/>
+    Em nosso ecossistema, conectamos alta precisão técnica à agilidade necessária para blindar o capital intelectual de empresas, investidores e criadores. Nossa missão é oferecer suporte integral em todo o ciclo de vida dos ativos, garantindo que a inteligência estratégica e a segurança jurídica sejam os motores de crescimento e valorização real dos ativos de cada cliente.
     `,
     authorTitle: "SALVADOR DALI",
     authorJob: "Digital Artisit",
@@ -47,14 +47,14 @@ function HeroSection({className, ...restProps}) {
                     </FadeUpTrigger>
                     <div className="d-flex justify-content-end align-items-center">
                         <Button
-                            href={"https://www.amazon.com.br/Contrafa%C3%A7%C3%A3o-marca-jurisprudencial-indenizat%C3%B3rio-jurisprud%C3%AAncia/dp/6525293812/ref=sr_1_1?crid=2W7MNALYOE6FK&dib=eyJ2IjoiMSJ9.-rg6KYQ47d_llUXXMZWSZA.XH2ZWwTAxu64FbJeOZrtoeCBkN4nKMfbvhdobDq222c&dib_tag=se&keywords=arno+ribeiro+rocha&qid=1715980297&sprefix=%2Caps%2C194&sr=8-1"}
+                            href={"https://api.whatsapp.com/send?phone=554888405715"}
                             className="mr-15 line-head"
                             borderStyle={"border-color-heading-color"}
                             borderRadius
                             target={"_blank"}
                           
                         >
-                            Adquira o seu exemplar agora
+                            REQUISITAR ANÁLISE ESTRATÉGICA
                         </Button>
                         </div>
 

@@ -3,7 +3,7 @@ import Button from "../button/Button";
 import BgDot from "../header/BgDot";
 
 const NextContent = {
-    title: "Descubra como a Futuro Rocha pode ajudar a sua marca!",
+    title: "Descubra como a Futuro Rocha pode impulsionar a segurança e o valor do seu negócio!",
     subtitle: `VAMOS CONVERSAS`,
     buttonText: "Entre em contato!"
 };

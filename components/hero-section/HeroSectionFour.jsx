@@ -11,11 +11,11 @@ import Button from '../button/Button';
 
 const heroData = {
     titleCover: `VALUATION`,
-    title: `Valuation`,
+    title: `Valuation de Ativos Intangíveis.`,
     descTitle: `Impacto no negócio`,
-    subtitle: `Descubra como a sua marca pode impulsionar o seu negócio!`,
-    description: `Uma marca forte e protegida não apenas agrega valor ao seu negócio, mas também se torna um ativo estratégico fundamental para o crescimento e sucesso a longo prazo.`,
-    descriptionTow: `Na Futuro Rocha, estamos aqui para ajudá-lo a maximizar o potencial da sua marca e garantir sua posição competitiva no mercado.`,
+    subtitle: `Transforme inovação em valor real de mercado.`,
+    description: `Na nova economia, o valor de uma empresa reside em seu capital intelectual. Realizamos a valoração técnica de softwares, algoritmos de IA, games e direitos autorais, oferecendo a base necessária para rodadas de investimento, fusões e aquisições (M&A).`,
+    descriptionTow: `Mais do que uma análise financeira, entregamos uma ferramenta estratégica para maximizar o potencial de ativos e garantir segurança jurídica em negociações complexas e disputas judiciais de alta complexidade.`,
     link: {
         href: "/services"
     },

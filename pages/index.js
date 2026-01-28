@@ -156,37 +156,37 @@ function Home() {
                   Jornada de Proteção dos seus Ativos
                 </TitleSection>
                 <Accordion>
-                  <AccordionItem title="1. Imersão e Diagnóstico de Ativos" active number={1}>
+                  <AccordionItem title="Imersão e Diagnóstico de Ativos" active number={1}>
                     <p>
                     Identificamos todos os ativos intangíveis do seu projeto, desde o código de software e algoritmos de IA até marcas e obras criativas.
                     </p>
                   </AccordionItem>
-                  <AccordionItem title="2. Análise de Viabilidade e Riscos" number={2}>
+                  <AccordionItem title="Análise de Viabilidade e Riscos" number={2}>
                     <p>
                     Avaliamos a segurança jurídica da operação, verificando conformidade com a LGPD, direitos de terceiros e regras de plataformas digitais.
                     </p>
                   </AccordionItem>
-                  <AccordionItem title="3. Estruturação Jurídica e Negocial" number={3}>
+                  <AccordionItem title="Estruturação Jurídica e Negocial" number={3}>
                     <p>
                     Modelagem jurídica para startups e estúdios, incluindo acordos de sócios (vesting), Term Sheets e proteção societária.
                     </p>
                   </AccordionItem>
-                  <AccordionItem title="4. Engenharia Contratual" number={4}>
+                  <AccordionItem title="Engenharia Contratual" number={4}>
                     <p>
                     Elaboração de contratos complexos de licenciamento, cessão de direitos autorais, publishing agreements e contratos de desenvolvimento.
                     </p>
                   </AccordionItem>
-                  <AccordionItem title="5. Blindagem e Proteção Formal" number={5}>
+                  <AccordionItem title="Blindagem e Proteção Formal" number={5}>
                     <p>
                     Execução de registros junto ao INPI, Biblioteca Nacional e órgãos de fomento, garantindo a titularidade e exclusividade dos ativos.
                     </p>
                   </AccordionItem>
-                  <AccordionItem title="6. Gestão de Fomento e Incentivos" number={6}>
+                  <AccordionItem title="Gestão de Fomento e Incentivos" number={6}>
                     <p>
                     Assessoria em editais de inovação (FINEP, BNDES) e aplicação de benefícios como a Lei do Bem para maximizar recursos.
                     </p>
                   </AccordionItem>
-                  <AccordionItem title="7. Monitoramento e Defesa Estratégica" number={7}>
+                  <AccordionItem title="Monitoramento e Defesa Estratégica" number={7}>
                     <p>
                     Vigilância contínua e atuação em contencioso complexo para proteger seus ativos contra contrafação e infrações digitais.
                     </p>
@@ -214,7 +214,7 @@ function Home() {
       <ParallaxImage
         alt={""}
         className={"cover-fixed rounded"}
-        src={"/img/futurorocha/extender-photo.jpg"}
+        src={"/team.png"}
         parallaxFrom={{ scale: 1.5 }}
         parallax={{ scale: 1.1 }}
         overlay={5}

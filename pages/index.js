@@ -100,7 +100,100 @@ function Home() {
     <Layout>
       
       <Head>
-        <title>Futuro Rocha</title>
+        <title>Futuro Rocha - Propriedade Intelectual, Games e IA | Escritório Jurídico Especializado</title>
+        <meta name="description" content="Escritório jurídico especializado em Propriedade Intelectual, Games, Inteligência Artificial e Direito Digital. Proteção de marcas, patentes, direitos autorais e valoração de ativos intangíveis. Atuação nacional e internacional em Florianópolis/SC." />
+        <meta name="keywords" content="propriedade intelectual, registro de marca, INPI, patente, direito autoral, games, inteligência artificial, direito digital, LGPD, valoração de ativos, startups, economia criativa, Florianópolis, escritório jurídico, Arno Ribeiro Rocha, contrafação de marca" />
+        <link rel="canonical" href="https://futurorocha.com.br/" />
+        
+        {/* Structured Data - WebPage */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Futuro Rocha - Propriedade Intelectual, Games e IA",
+              "description": "Escritório jurídico especializado em Propriedade Intelectual, Games, Inteligência Artificial e Direito Digital",
+              "url": "https://futurorocha.com.br",
+              "inLanguage": "pt-BR",
+              "isPartOf": {
+                "@type": "WebSite",
+                "name": "Futuro Rocha",
+                "url": "https://futurorocha.com.br"
+              },
+              "about": {
+                "@type": "Thing",
+                "name": "Propriedade Intelectual",
+                "description": "Serviços jurídicos especializados em proteção de marcas, patentes, direitos autorais e ativos intangíveis"
+              },
+              "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://futurorocha.com.br/"
+                  }
+                ]
+              }
+            })
+          }}
+        />
+        
+        {/* Structured Data - Service */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "serviceType": "Propriedade Intelectual",
+              "provider": {
+                "@type": "LegalService",
+                "name": "Futuro Rocha"
+              },
+              "areaServed": {
+                "@type": "Country",
+                "name": "Brasil"
+              },
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Serviços Jurídicos",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Registro de Marca no INPI"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Proteção de Propriedade Intelectual"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Valoração de Ativos Intangíveis"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Direito Digital e LGPD"
+                    }
+                  }
+                ]
+              }
+            })
+          }}
+        />
       </Head>
       
       

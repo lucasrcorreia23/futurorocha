@@ -128,10 +128,137 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Futuro Rocha</title>
-        <meta name="description" content="Futuro Rocha" />
+        {/* Primary Meta Tags */}
+        <title>Futuro Rocha - Propriedade Intelectual, Games e IA | Escritório Jurídico Especializado</title>
+        <meta name="title" content="Futuro Rocha - Propriedade Intelectual, Games e IA | Escritório Jurídico Especializado" />
+        <meta name="description" content="Escritório jurídico especializado em Propriedade Intelectual, Games, Inteligência Artificial e Direito Digital. Proteção de marcas, patentes, direitos autorais e valoração de ativos intangíveis. Atuação nacional e internacional em Florianópolis/SC." />
+        <meta name="keywords" content="propriedade intelectual, registro de marca, INPI, patente, direito autoral, games, inteligência artificial, direito digital, LGPD, valoração de ativos, startups, economia criativa, Florianópolis, escritório jurídico, Arno Ribeiro Rocha, contrafação de marca" />
+        <meta name="author" content="Futuro Rocha" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="Portuguese" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="rating" content="general" />
+        <meta name="geo.region" content="BR-SC" />
+        <meta name="geo.placename" content="Florianópolis" />
+        <meta name="geo.position" content="-27.5954;-48.5480" />
+        <meta name="ICBM" content="-27.5954, -48.5480" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://futurorocha.com.br/" />
+        <meta property="og:title" content="Futuro Rocha - Propriedade Intelectual, Games e IA | Escritório Jurídico Especializado" />
+        <meta property="og:description" content="Escritório jurídico especializado em Propriedade Intelectual, Games, Inteligência Artificial e Direito Digital. Proteção de marcas, patentes, direitos autorais e valoração de ativos intangíveis." />
+        <meta property="og:image" content="https://futurorocha.com.br/img/futurorocha/logotipo.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Futuro Rocha" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://futurorocha.com.br/" />
+        <meta name="twitter:title" content="Futuro Rocha - Propriedade Intelectual, Games e IA" />
+        <meta name="twitter:description" content="Escritório jurídico especializado em Propriedade Intelectual, Games, Inteligência Artificial e Direito Digital." />
+        <meta name="twitter:image" content="https://futurorocha.com.br/img/futurorocha/logotipo.png" />
+        
+        {/* Favicon */}
         <link rel="icon" href="/img/favicon.ico" />
         <link rel="apple-touch-icon" href="/img/favicon.ico" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://futurorocha.com.br/" />
+        
+        {/* Alternate Languages */}
+        <link rel="alternate" hrefLang="pt-BR" href="https://futurorocha.com.br/" />
+        
+        {/* Structured Data - Organization */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LegalService",
+              "name": "Futuro Rocha",
+              "description": "Escritório jurídico especializado em Propriedade Intelectual, Games, Inteligência Artificial e Direito Digital",
+              "url": "https://futurorocha.com.br",
+              "logo": "https://futurorocha.com.br/img/futurorocha/logotipo.png",
+              "image": "https://futurorocha.com.br/img/futurorocha/logotipo.png",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Florianópolis",
+                "addressRegion": "SC",
+                "addressCountry": "BR"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "-27.5954",
+                "longitude": "-48.5480"
+              },
+              "founder": {
+                "@type": "Person",
+                "name": "Arno Ribeiro Rocha",
+                "jobTitle": "Advogado e Mestre em Propriedade Intelectual"
+              },
+              "areaServed": {
+                "@type": "Country",
+                "name": "Brasil"
+              },
+              "serviceType": [
+                "Propriedade Intelectual",
+                "Registro de Marca",
+                "Direito Autoral",
+                "Direito Digital",
+                "LGPD",
+                "Valoração de Ativos Intangíveis"
+              ],
+              "telephone": "+55-48-8840-5715",
+              "email": "contato@futurorocha.com.br",
+              "sameAs": [
+                "http://linkedin.com/in/futuro-rocha-38a1692aa",
+                "http://www.youtube.com/@futurorocha"
+              ],
+              "priceRange": "$$",
+              "openingHours": "Mo-Fr 09:00-18:00"
+            })
+          }}
+        />
+        
+        {/* Structured Data - BreadcrumbList */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://futurorocha.com.br/"
+                }
+              ]
+            })
+          }}
+        />
+        
+        {/* Structured Data - WebSite */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Futuro Rocha",
+              "url": "https://futurorocha.com.br",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://futurorocha.com.br/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            })
+          }}
+        />
       </Head>
 
       <Provider store={store}>

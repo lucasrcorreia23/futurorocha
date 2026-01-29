@@ -10,7 +10,7 @@ import Button from '../button/Button';
 const HeroContent = {
     title: "Quem somos?",
     subtitle: ``,
-    description: `Sob a liderança do Dr. Arno Ribeiro Rocha — Mestre em Propriedade Intelectual e autor da obra de referência "Contrafação de Marca" — a Futuro Rocha transcende o registro burocrático para atuar na arquitetura jurídica de negócios disruptivos. Unimos mais de uma década de experiência prática à dinâmica da nova economia, transformando o Direito em uma ferramenta de monetização e vantagem competitiva para nossos parceiros.<br/><br/>
+    description: `Sob a liderança do Dr. Arno Ribeiro Rocha — Mestre em Propriedade Intelectual e autor da obra de referência "Contrafação de Marca" — o Futuro Rocha transcende o registro burocrático para atuar na arquitetura jurídica de negócios disruptivos. Unimos mais de uma década de experiência prática à dinâmica da nova economia, transformando o Direito em uma ferramenta de monetização e vantagem competitiva para nossos parceiros.<br/><br/>
     Em nosso ecossistema, conectamos alta precisão técnica à agilidade necessária para blindar o capital intelectual de empresas, investidores e criadores. Nossa missão é oferecer suporte integral em todo o ciclo de vida dos ativos, garantindo que a inteligência estratégica e a segurança jurídica sejam os motores de crescimento e valorização real dos ativos de cada cliente.
     `,
     authorTitle: "SALVADOR DALI",

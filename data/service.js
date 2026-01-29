@@ -2,13 +2,13 @@ import React from 'react';
 
 const servicesDetails = [
     {
-        icon: <img src="/person icon.png" alt="Expertise em Ecossistemas Digitais" />,
-        title: "Expertise em Ecossistemas Digitais",
+        icon: <img src="/person icon.png" alt="Expertise Digital" />,
+        title: "Expertise Digital",
         description: "Especialização em ativos intangíveis, Games, IA e Direito Digital de alta complexidade",
     },
     {
-        icon: <img src="/handshake.png" alt="Suporte Integral ao Negócio" />,
-        title: "Suporte Integral ao Negócio",
+        icon: <img src="/handshake.png" alt="Suporte Integral" />,
+        title: "Suporte Integral",
         description: "Atuação 360º que conecta o jurídico à estratégia empresarial e expansão de mercado.",
     },
     {
@@ -17,8 +17,8 @@ const servicesDetails = [
         description: "Foco em escalabilidade via auditorias de conformidade (LGPD) e due diligence de ativos.",
     },
     {
-        icon: <img src="/shield icon.png" alt="Defesa de Ativos Digitais" />,
-        title: "Defesa de Ativos Digitais",
+        icon: <img src="/shield icon.png" alt="Defesa Digital" />,
+        title: "Defesa Digital",
         description: "Vigilância e recuperação de contas, perfis e combate à concorrência desleal em rede.",
     },
     {

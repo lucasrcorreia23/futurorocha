@@ -201,7 +201,7 @@ function Home() {
       {/*Start Service*/}
       <div className="container section-margin" data-dsn-title="Serviços">
         <TitleSection description={"Diferenciais"}>
-        Por que a <br /> Futuro Rocha?
+        Por que o <br /> Futuro Rocha?
         </TitleSection>
         <ServiceTow className={"icon-left"} />
       </div>

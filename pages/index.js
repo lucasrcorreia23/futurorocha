@@ -20,6 +20,7 @@ import ServiceTow from "../components/services/grid/ServiceTow";
 import HeroSectionFour from "../components/hero-section/HeroSectionFour";
 import HeroSectionThree from "../components/hero-section/HeroSectionThree";
 import ButtonPopup from "/components/button-popup/ButtonPopup";
+import PricingPlans from "../components/pricing/PricingPlans";
 
 
 import { ServiceGrid } from "../components/services/Service";
@@ -396,6 +397,8 @@ function Home() {
           colGap={30}
         />
       </section>
+
+      <PricingPlans />
 
       {/*========== End brand-client Section ==========*/}
 

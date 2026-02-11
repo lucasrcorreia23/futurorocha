@@ -14,11 +14,14 @@ const PricingPlans: React.FC = () => {
         <div className="box-left">
           <TitleSection
             className="second-title mb-15"
-            description={"ASSESSORIA JURÍDICA RECORRENTE"}
+            description="ASSESSORIA JURÍDICA RECORRENTE"
+            classTitle=""
+            classDesc="line-shape line-shape-before"
+            classDesInner="line-bg-right"
           >
             Planos Futuro Rocha
           </TitleSection>
-          <p className=" sub-headingmax-w570 dsn-up">{pricingMeta.cycle}</p>
+          <p className="max-w570 dsn-up">{pricingMeta.cycle}</p>
         </div>
         <div className="box-right justify-content-end d-flex flex-column">
           <p className="max-w570 dsn-up mb-15">
@@ -54,14 +57,10 @@ const PricingPlans: React.FC = () => {
                     </p>
                     <h4 className="title-block service-title">{plan.name}</h4>
 
-                    <h2 className="mb-10">
+                    <h2 className=" mb-15">
                       <strong>{plan.price}</strong>
                     </h2>
-                    <p className="mb-10">{plan.hours}</p>
-                    <p className="mb-10">{plan.meetings}</p>
-                    <p className="mb-15">
-                      <strong>Foco:</strong> {plan.focus}
-                    </p>
+                    <p className="mb-15">{plan.description}</p>
 
                     <ul className="pricing-deliveries">
                       {plan.deliveries.map((item: string, index: number) => (
@@ -72,8 +71,9 @@ const PricingPlans: React.FC = () => {
                       ))}
                     </ul>
 
-                    <p className="mt-15">{plan.support}</p>
-                    <p className="mt-5">{plan.bonus}</p>
+                    <div className="pricing-bonus mt-15">
+                      <strong>Bônus:</strong> {plan.bonus}
+                    </div>
                   </div>
                 </div>
               </div>

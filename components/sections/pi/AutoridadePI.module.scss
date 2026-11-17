@@ -1,0 +1,66 @@
+.book {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+}
+
+.cover {
+  width: 150px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 24px 60px -18px rgba(124, 58, 237, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  display: block;
+  flex: none;
+}
+
+// Capa provisória até o cliente enviar a imagem do livro.
+.coverFallback {
+  aspect-ratio: 2 / 3;
+  padding: 18px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(160deg, #2e1065, #0a0914 70%);
+}
+
+.coverTitle {
+  font-family: var(--font-sora), sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.15;
+}
+
+.coverAuthor {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--violet-300);
+}
+
+.person {
+  --pad: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo {
+  flex: 1 1 200px;
+  width: 200px;
+  min-height: 320px;
+}
+
+.personBody {
+  flex: 1 1 240px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 720px) {
+  .personBody {
+    padding: 24px;
+  }
+}

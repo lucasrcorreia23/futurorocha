@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Futuro Rocha — Propriedade Intelectual</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Sora:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#07070D;color:#F4F3FA;font-family:'Inter',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#C4B5FD}a:hover{color:#EDE9FE}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #A78BFA;outline-offset:3px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.sec{padding:80px 0;position:relative}
+.line-top{border-top:1px solid rgba(255,255,255,.07)}
+.eyebrow{display:flex;align-items:center;gap:12px;margin:0 0 20px;font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#A78BFA}
+.eyebrow::before{content:"";width:28px;height:1px;background:linear-gradient(90deg,#8B5CF6,transparent)}
+h1,h2,h3,h4{font-family:'Sora',sans-serif;margin:0;letter-spacing:-.02em;color:#F7F6FC}
+h1{font-size:clamp(38px,5.2vw,62px);line-height:1.04;font-weight:600}
+h2{font-size:clamp(30px,3.6vw,44px);line-height:1.1;font-weight:600}
+h3{font-size:19px;line-height:1.3;font-weight:600}
+h4{font-size:16px;line-height:1.35;font-weight:600}
+p{margin:0;line-height:1.65}
+.lead{font-size:19px;line-height:1.55;color:#E4E1F2}
+.muted{font-size:16px;color:#A9A6BD}
+.small{font-size:14px;line-height:1.6;color:#A9A6BD}
+.tiny{font-size:12px;line-height:1.55;color:#8E8BA3}
+.hl{color:#A78BFA}
+.card{position:relative;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:28px;box-sizing:border-box;transition:border-color .25s,background .25s,transform .25s}
+.card.hov:hover{border-color:rgba(167,139,250,.45);background:linear-gradient(180deg,rgba(139,92,246,.08),rgba(255,255,255,.015));transform:translateY(-2px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;border:1px solid rgba(255,255,255,.22);font-size:14px;font-weight:600;letter-spacing:.01em;color:#F4F3FA;text-decoration:none;box-sizing:border-box;transition:background .2s,border-color .2s,box-shadow .2s;white-space:nowrap}
+.btn:hover{border-color:#A78BFA;color:#FFFFFF;background:rgba(139,92,246,.1)}
+.btn.pri{background:#7C3AED;border-color:#7C3AED;box-shadow:0 10px 34px -10px rgba(124,58,237,.85)}
+.btn.pri:hover{background:#8B5CF6;border-color:#8B5CF6}
+.btn.sm{min-height:44px;padding:0 18px;font-size:13px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.ico{width:48px;height:48px;flex:none;border-radius:14px;display:flex;align-items:center;justify-content:center;background:rgba(124,58,237,.14);border:1px solid rgba(167,139,250,.28);color:#C4B5FD}
+.ico svg{width:24px;height:24px}
+.nav a{color:#C9C6D9;text-decoration:none;font-size:14px;font-weight:500;padding:10px 2px;border-bottom:1px solid transparent}
+.nav a:hover{color:#FFFFFF}
+.nav a.on{color:#FFFFFF;border-bottom-color:#8B5CF6}
+ul.dots{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column;gap:9px}
+ul.dots li{position:relative;padding-left:18px;font-size:14px;line-height:1.5;color:#B9B6CC}
+ul.dots li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#8B5CF6;box-shadow:0 0 10px rgba(139,92,246,.8)}
+details.acc{border-bottom:1px solid rgba(255,255,255,.09)}
+details.acc summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px 4px}
+details.acc summary::-webkit-details-marker{display:none}
+details.acc .pm{width:40px;height:40px;flex:none;border-radius:50%;border:1px solid rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;color:#C4B5FD;transition:transform .25s,background .25s,border-color .25s}
+details.acc[open] .pm{transform:rotate(45deg);background:#7C3AED;border-color:#7C3AED;color:#FFFFFF}
+details.acc summary:hover h3{color:#C4B5FD}
+details.acc .body{padding:0 4px 28px}
+details.acc ul.dots{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px 28px;margin:0}
+.glow{position:absolute;pointer-events:none;border-radius:50%;filter:blur(10px)}
+.step-n{font-family:'Sora',sans-serif;font-size:12px;font-weight:600;letter-spacing:.16em;color:#A78BFA}
+.play{width:68px;height:68px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(124,58,237,.9);box-shadow:0 0 0 10px rgba(124,58,237,.18),0 12px 40px -6px rgba(124,58,237,.9);color:#FFFFFF}
+.video{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-decoration:none;border-radius:18px;overflow:hidden;border:1px solid rgba(167,139,250,.3);background:radial-gradient(120% 90% at 70% 20%,rgba(124,58,237,.45),rgba(7,7,13,0) 60%),linear-gradient(160deg,#151229,#0A0915);color:#F4F3FA}
+.video:hover .play{background:#8B5CF6}
+.short{position:relative;display:flex;flex-direction:column;justify-content:flex-end;gap:10px;padding:22px;aspect-ratio:9/16;max-height:300px;box-sizing:border-box;border-radius:18px;overflow:hidden;text-decoration:none;border:1px solid rgba(255,255,255,.09);color:#F4F3FA;transition:border-color .25s,transform .25s}
+.short:hover{border-color:rgba(167,139,250,.55);transform:translateY(-3px)}
+.foot a{color:#B9B6CC;text-decoration:none}
+.foot a:hover{color:#FFFFFF}
+@media (max-width:720px){.sec{padding:64px 0}.wrap{padding:0 20px}.hide-sm{display:none}}
+</style>
+</helmet>
+<div style="width:100%;overflow:hidden;background:#07070D">
+
+<!-- HEADER -->
+<header style="position:relative;z-index:2;border-bottom:1px solid rgba(255,255,255,.07);background:rgba(7,7,13,.85)">
+<div class="wrap" style="display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:18px">
+<a href="Visual-PI.dc.html" aria-label="Futuro Rocha Propriedade Intelectual — início" style="display:block"><img src="/_blob/ac73d20e0484cf00ffd83dfd82208fc1" alt="Futuro Rocha Propriedade Intelectual" style="height:52px;width:auto;display:block"></a>
+<nav class="nav" aria-label="Principal" style="display:flex;flex-wrap:wrap;gap:28px;align-items:center"><a href="#">Início</a><a href="Visual-Advocacia.dc.html">Advocacia</a><a href="Visual-PI.dc.html" class="on" aria-current="page">Propriedade Intelectual</a><a href="#fpl">Raio X BLINVS</a><a href="#contato">Contato</a></nav>
+<a class="btn sm" href="#fpl" style="border-color:rgba(167,139,250,.6)">Fazer diagnóstico <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</header>
+
+<!-- 01 HERO -->
+<section style="position:relative;overflow:hidden;padding:128px 0 144px;background:#07070D">
+<img src="/_blob/c7c34dd32e743c2788bdef7e23db3574" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:15% center;display:block;">
+<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,7,13,.97) 0%,rgba(7,7,13,.88) 34%,rgba(7,7,13,.35) 66%,rgba(7,7,13,.5) 100%),linear-gradient(180deg,rgba(7,7,13,.35) 0%,rgba(7,7,13,0) 30%,rgba(7,7,13,0) 70%,#07070D 100%)"></div>
+<div aria-hidden="true" style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(70% 70% at 70% 45%,#000 30%,transparent 75%);-webkit-mask-image:radial-gradient(70% 70% at 70% 45%,#000 30%,transparent 75%)"></div>
+<div class="wrap" style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:56px;align-items:center">
+<div>
+<div class="eyebrow">Futuro Rocha PI</div>
+<h1>Proteja o que diferencia o seu negócio, sua atividade ou seu projeto.</h1>
+<p class="lead" style="margin-top:24px;font-weight:500">Proteção e gestão de marcas, criações e tecnologias.</p>
+<p class="muted" style="margin-top:16px;max-width:540px">Propriedade intelectual não se resume ao registro. Envolve identificar os ativos, definir sua titularidade, escolher as formas adequadas de proteção e organizar sua utilização e defesa.</p>
+<div class="btns" style="margin-top:36px"><a class="btn pri" href="#contato">Conheça seus ativos <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><a class="btn" href="#fpl">Faça o Raio X BLINVS</a></div>
+</div>
+<div aria-hidden="true"></div>
+</div>
+</section>
+
+<!-- 02 BLINVS RAIO-X -->
+<section class="sec" id="fpl" style="padding-top:40px">
+<div class="wrap">
+<div style="position:relative;border-radius:28px;padding:48px;border:1px solid rgba(167,139,250,.32);background:radial-gradient(80% 120% at 100% 0%,rgba(124,58,237,.22),rgba(7,7,13,0) 55%),linear-gradient(180deg,#100E1E,#0A0914);box-shadow:0 40px 120px -60px rgba(124,58,237,.6);box-sizing:border-box">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:48px;align-items:start">
+<div>
+<div class="eyebrow">Comece pelo diagnóstico · Raio X BLINVS</div>
+<h2>BLINVS — conheça o que o seu negócio está criando.</h2>
+<p class="muted" style="margin-top:22px">Antes de proteger marcas, softwares, conteúdos, tecnologias ou outros ativos, é importante identificar o que existe, como está organizado e o que merece atenção.</p>
+<p class="muted" style="margin-top:14px">O Raio X BLINVS é uma ferramenta <span class="hl" style="font-weight:600">gratuita</span> que ajuda empresas, profissionais e projetos a reconhecer seus ativos de propriedade intelectual, visualizar seu nível de proteção e identificar prioridades.</p>
+<div class="btns" style="margin-top:32px"><a class="btn pri" href="#">Fazer o Raio X gratuito <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><a class="btn" href="#">Conheça a BLINVS</a></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<a class="video" href="https://drive.google.com/file/d/1nJ4RH282Kh7trs01WaXph1GVHKiu6V-m/view?usp=sharing" style="min-height:280px;padding:32px">
+<div aria-hidden="true" style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:40px 40px"></div>
+<div aria-hidden="true" style="position:absolute;top:24px;left:24px;right:24px;display:flex;justify-content:space-between;align-items:center"><span style="font-family:'Sora',sans-serif;font-weight:700;font-size:18px;letter-spacing:.02em">BLINVS</span><span class="tiny" style="letter-spacing:.2em;text-transform:uppercase;color:#C4B5FD">Gestão de ativos</span></div>
+<span class="play" style="position:relative"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></span>
+<span style="position:relative;text-align:center"><span style="display:block;font-family:'Sora',sans-serif;font-weight:600;font-size:18px">Assista ao vídeo</span><span class="small" style="display:block;margin-top:4px">Conheça o Raio X BLINVS · ~1 min</span></span>
+</a>
+<div class="card" style="padding:22px;border-radius:14px;display:flex;align-items:center;gap:18px">
+<svg width="72" height="72" viewBox="0 0 72 72" role="img" aria-label="Exemplo de nível de proteção: 44 de 100"><circle cx="36" cy="36" r="30" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="6"></circle><circle cx="36" cy="36" r="30" fill="none" stroke="#8B5CF6" stroke-width="6" stroke-linecap="round" stroke-dasharray="83 189" transform="rotate(-90 36 36)"></circle><text x="36" y="42" text-anchor="middle" font-family="Sora, sans-serif" font-size="18" font-weight="600" fill="#F4F3FA">44</text></svg>
+<div><h4>Nível de proteção</h4><div class="small" style="margin-top:4px">Pontuação geral e indicadores por dimensão, com resultado na hora.</div></div>
+</div>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:40px">
+<div class="card" style="padding:20px;border-radius:14px;display:flex;gap:14px;align-items:flex-start"><div class="ico" style="width:40px;height:40px;border-radius:12px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:20px;height:20px"><rect x="4" y="11" width="16" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 7.5-2"></path></svg></div><div><h4>Sem cadastro</h4><div class="small" style="margin-top:4px">Acesse e responda em poucos minutos.</div></div></div>
+<div class="card" style="padding:20px;border-radius:14px;display:flex;gap:14px;align-items:flex-start"><div class="ico" style="width:40px;height:40px;border-radius:12px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:20px;height:20px"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></div><div><h4>Respostas rápidas</h4><div class="small" style="margin-top:4px">Leva cerca de 5 minutos para concluir.</div></div></div>
+<div class="card" style="padding:20px;border-radius:14px;display:flex;gap:14px;align-items:flex-start"><div class="ico" style="width:40px;height:40px;border-radius:12px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:20px;height:20px"><path d="M3 16a9 9 0 0 1 18 0"></path><path d="M12 16l4-5"></path><circle cx="12" cy="16" r="1.2"></circle></svg></div><div><h4>Visão dos seus ativos</h4><div class="small" style="margin-top:4px">Nível de 0 a 100 em 5 dimensões.</div></div></div>
+<div class="card" style="padding:20px;border-radius:14px;display:flex;gap:14px;align-items:flex-start"><div class="ico" style="width:40px;height:40px;border-radius:12px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:20px;height:20px"><path d="M14 3H6v18h12V7z"></path><path d="M14 3v4h4M9 13h6M9 17h4"></path></svg></div><div><h4>Resultado em PDF</h4><div class="small" style="margin-top:4px">Até 3 prioridades e seção “Entenda”.</div></div></div>
+</div>
+
+<div style="margin-top:40px">
+<div class="tiny" style="letter-spacing:.2em;text-transform:uppercase;color:#C4B5FD;font-weight:600;margin-bottom:18px">Uma jornada progressiva</div>
+<div style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
+<div class="card hov" style="padding:26px"><div style="display:flex;align-items:center;gap:12px;margin-bottom:16px"><span style="width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#7C3AED;font-family:'Sora',sans-serif;font-weight:600;font-size:14px">1</span><span class="tiny" style="letter-spacing:.16em;text-transform:uppercase;color:#A78BFA;font-weight:600">Gratuito</span></div><h3>Raio X BLINVS</h3><p class="small" style="margin-top:6px;color:#DDD9EC;font-weight:500">Visão inicial e prioridades.</p><p class="small" style="margin-top:10px">Identifique seus ativos de propriedade intelectual, visualize seu nível de proteção e receba até 3 prioridades.</p></div>
+<div class="card hov" style="padding:26px"><div style="display:flex;align-items:center;gap:12px;margin-bottom:16px"><span style="width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1px solid rgba(167,139,250,.6);font-family:'Sora',sans-serif;font-weight:600;font-size:14px">2</span></div><h3>Trilhas BLINVS</h3><p class="small" style="margin-top:6px;color:#DDD9EC;font-weight:500">Aprofundamento nos temas.</p><p class="small" style="margin-top:10px">Conteúdos práticos e orientações específicas sobre marcas, software e titularidade, conteúdo, dados e invenções.</p></div>
+<div class="card hov" style="padding:26px"><div style="display:flex;align-items:center;gap:12px;margin-bottom:16px"><span style="width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1px solid rgba(167,139,250,.6);font-family:'Sora',sans-serif;font-weight:600;font-size:14px">3</span></div><h3>Análise Profissional BLINVS</h3><p class="small" style="margin-top:6px;color:#DDD9EC;font-weight:500">Quando a situação exigir.</p><p class="small" style="margin-top:10px">Revisão documental e orientação individualizada com profissionais especializados, a partir do resultado do Raio X.</p></div>
+</div>
+</div>
+<p class="tiny" style="margin-top:28px;display:flex;gap:10px;align-items:flex-start"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" style="flex:none;margin-top:1px"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5M12 8h.01"></path></svg><span>Resultado preliminar e informativo — não representa certificação, parecer jurídico ou análise integral de documentos. Não informe segredos técnicos nem dados confidenciais.</span></p>
+</div>
+</div>
+</section>
+
+<!-- 03 SOLUÇÕES -->
+<section class="sec line-top">
+<div class="wrap" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:56px;align-items:start">
+<div style="max-width:420px">
+<div class="eyebrow">Soluções</div>
+<h2>Soluções em propriedade intelectual</h2>
+<p class="muted" style="margin-top:20px">Proteção, gestão e defesa de ativos intelectuais.</p>
+<a class="btn" href="#contato" style="margin-top:32px">Fale com um especialista</a>
+</div>
+<div style="flex:1;border-top:1px solid rgba(255,255,255,.09);min-width:0">
+<details class="acc" open="open"><summary><div style="display:flex;gap:18px;align-items:flex-start"><span class="step-n" style="margin-top:4px">01</span><div><h3>Marcas</h3><p class="small" style="margin-top:6px">Pesquisa, registro, acompanhamento, defesa e gestão de marcas.</p></div></div><span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></summary>
+<div class="body" style="padding-left:52px"><ul class="dots"><li>Pesquisa de viabilidade</li><li>Acompanhamento de processos</li><li>Oposições e manifestações</li><li>Recursos administrativos</li><li>Nulidade e defesa de marcas</li><li>Renovações e gestão de portfólio</li><li>Notificações e conflitos envolvendo marcas</li></ul></div></details>
+<details class="acc"><summary><div style="display:flex;gap:18px;align-items:flex-start"><span class="step-n" style="margin-top:4px">02</span><div><h3>Software</h3><p class="small" style="margin-top:6px">Registro, titularidade, desenvolvimento, contratos e licenciamento de software.</p></div></div><span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></summary>
+<div class="body" style="padding-left:52px"><ul class="dots"><li>Registro de software no INPI</li><li>Análise de autoria e titularidade</li><li>Organização documental do desenvolvimento</li><li>Contratos de desenvolvimento de software</li><li>Cessão e licenciamento de direitos</li><li>Relações com desenvolvedores e fornecedores</li><li>Conflitos envolvendo software e titularidade</li></ul></div></details>
+<details class="acc"><summary><div style="display:flex;gap:18px;align-items:flex-start"><span class="step-n" style="margin-top:4px">03</span><div><h3>Direitos Autorais</h3><p class="small" style="margin-top:6px">Autoria, titularidade, proteção, contratos e exploração de obras e conteúdos.</p></div></div><span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></summary>
+<div class="body" style="padding-left:52px"><ul class="dots"><li>Registro e gestão de obras</li><li>Contratos de cessão e licenciamento</li><li>Conteúdos digitais e audiovisuais</li><li>Uso de imagem e conteúdo</li><li>Plataformas e exploração de obras</li><li>Defesa de direitos morais e patrimoniais</li></ul></div></details>
+<details class="acc"><summary><div style="display:flex;gap:18px;align-items:flex-start"><span class="step-n" style="margin-top:4px">04</span><div><h3>Patentes e Desenhos Industriais</h3><p class="small" style="margin-top:6px">Proteção de invenções, soluções técnicas e design de produtos.</p></div></div><span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></summary>
+<div class="body" style="padding-left:52px"><ul class="dots"><li>Avaliação da forma de proteção</li><li>Patentes e modelos de utilidade</li><li>Desenhos industriais</li><li>Estratégia de depósito</li><li>Acompanhamento de processos</li><li>Suporte técnico especializado quando necessário</li></ul></div></details>
+<details class="acc"><summary><div style="display:flex;gap:18px;align-items:flex-start"><span class="step-n" style="margin-top:4px">05</span><div><h3>Licenciamento e Transferência de Tecnologia</h3><p class="small" style="margin-top:6px">Estruturação jurídica para uso, cessão e exploração de tecnologias e ativos intelectuais.</p></div></div><span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></summary>
+<div class="body" style="padding-left:52px"><ul class="dots"><li>Contratos de licenciamento</li><li>Cessão de direitos</li><li>Transferência de tecnologia</li><li>Know-how e confidencialidade</li><li>Parcerias tecnológicas</li><li>Relações com empresas, universidades e ICTs</li></ul></div></details>
+<details class="acc"><summary><div style="display:flex;gap:18px;align-items:flex-start"><span class="step-n" style="margin-top:4px">06</span><div><h3>Gestão de Ativos Intelectuais</h3><p class="small" style="margin-top:6px">Organização, proteção e acompanhamento dos ativos de propriedade intelectual.</p></div></div><span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></summary>
+<div class="body" style="padding-left:52px"><ul class="dots"><li>Identificação de ativos</li><li>Organização de portfólio</li><li>Titularidade</li><li>Prazos e renovações</li><li>Prioridades de proteção</li><li>Contratos relacionados aos ativos</li><li>Apoio em conflitos e exploração</li></ul></div></details>
+</div>
+</div>
+</section>
+
+<!-- 04 EXPERTISES -->
+<section class="sec" style="background:linear-gradient(180deg,#07070D,#0B0A16 50%,#07070D)">
+<div class="wrap">
+<div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-end;margin-bottom:36px">
+<div style="max-width:640px"><div class="eyebrow">Expertises especializadas</div><h2>Expertise jurídica para setores, tecnologias e projetos.</h2></div>
+<p class="muted" style="max-width:440px">Alguns setores e projetos exigem conhecimento jurídico específico, especialmente quando tecnologia, criação, propriedade intelectual e regulação se encontram.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px">
+<div class="card hov" style="padding:28px"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg></div><h3 style="margin-top:24px">Economia Criativa e Conteúdo</h3><p class="small" style="margin-top:8px">Proteção e exploração jurídica de obras, conteúdos e direitos autorais.</p><ul class="dots"><li>Obras literárias, artísticas e científicas</li><li>Música e direitos fonográficos</li><li>Audiovisual, cinema, publicidade e streaming</li><li>Contratos de edição, cessão e licenciamento</li><li>Plataformas digitais e exploração de conteúdo</li><li>Defesa de direitos autorais</li></ul></div>
+<div class="card hov" style="padding:28px"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="11" rx="4"></rect><path d="M7 11v3M5.5 12.5h3"></path><circle cx="16" cy="11.5" r="0.8"></circle><circle cx="18" cy="13.8" r="0.8"></circle></svg></div><h3 style="margin-top:24px">Games, E-sports e Tecnologia Interativa</h3><p class="small" style="margin-top:8px">Atuação jurídica especializada no ecossistema de jogos e entretenimento digital.</p><ul class="dots"><li>Estruturação jurídica de estúdios e projetos</li><li>Propriedade intelectual aplicada a jogos</li><li>Contratos de desenvolvimento e publishing</li><li>Licenciamento de engines, assets, trilhas e personagens</li><li>E-sports, streamers e organizações</li><li>Monetização, marketplaces e plataformas</li></ul></div>
+<div class="card hov" style="padding:28px"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"></rect><rect x="9.5" y="9.5" width="5" height="5"></rect><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"></path></svg></div><h3 style="margin-top:24px">Inteligência Artificial, Dados e Novas Tecnologias</h3><p class="small" style="margin-top:8px">Atuação jurídica em projetos que envolvem IA, software, dados e ativos tecnológicos.</p><ul class="dots"><li>Estruturação jurídica de projetos de IA</li><li>Propriedade intelectual aplicada à IA</li><li>Software, código, dados e titularidade</li><li>Contratos de desenvolvimento e licenciamento</li><li>Uso de APIs e tecnologias de terceiros</li><li>Responsabilidade e conteúdos gerados por IA</li></ul></div>
+<div class="card hov" style="padding:28px"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"></path><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"></path></svg></div><h3 style="margin-top:24px">Inovação, Tecnologia e Fomento</h3><p class="small" style="margin-top:8px">Estruturação jurídica de projetos de inovação, parcerias tecnológicas e instrumentos de fomento.</p><ul class="dots"><li>Editais e programas de inovação</li><li>Contratos com ICTs e universidades</li><li>Transferência de tecnologia</li><li>Encomenda tecnológica e PMI</li><li>Lei do Bem e instrumentos de incentivo</li><li>Relações com órgãos e instituições de fomento</li></ul></div>
+</div>
+</div>
+</section>
+
+<!-- 05 DA CRIAÇÃO À DEFESA -->
+<section class="sec line-top">
+<div class="wrap">
+<div style="text-align:center;max-width:640px;margin:0 auto 40px"><div class="eyebrow" style="justify-content:center">Jornada de proteção</div><h2>Da criação à defesa</h2></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px">
+<div class="card hov" style="padding:26px"><div style="display:flex;justify-content:space-between;align-items:center"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg></div><span class="step-n">01</span></div><h3 style="margin-top:22px">Identificar</h3><p class="small" style="margin-top:8px">Reconhecer os ativos, sua autoria, titularidade e formas de proteção.</p></div>
+<div class="card hov" style="padding:26px"><div style="display:flex;justify-content:space-between;align-items:center"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path><path d="m9 12 2 2 4-4"></path></svg></div><span class="step-n">02</span></div><h3 style="margin-top:22px">Proteger</h3><p class="small" style="margin-top:8px">Registros e demais medidas de proteção perante o INPI e órgãos competentes.</p></div>
+<div class="card hov" style="padding:26px"><div style="display:flex;justify-content:space-between;align-items:center"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6v18h12V7z"></path><path d="M14 3v4h4M9 13h6M9 17h4"></path></svg></div><span class="step-n">03</span></div><h3 style="margin-top:22px">Contratar</h3><p class="small" style="margin-top:8px">Licenciamento, cessão de direitos, desenvolvimento, publishing e outros contratos.</p></div>
+<div class="card hov" style="padding:26px"><div style="display:flex;justify-content:space-between;align-items:center"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"></path><path d="M15 7h6v6"></path></svg></div><span class="step-n">04</span></div><h3 style="margin-top:22px">Explorar</h3><p class="small" style="margin-top:8px">Uso, licenciamento, parcerias, transferência de tecnologia e outras formas de exploração dos ativos.</p></div>
+<div class="card hov" style="padding:26px"><div style="display:flex;justify-content:space-between;align-items:center"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M5 7h14"></path><path d="M5 7l-3 6a3 3 0 0 0 6 0zM19 7l-3 6a3 3 0 0 0 6 0z"></path></svg></div><span class="step-n">05</span></div><h3 style="margin-top:22px">Defender</h3><p class="small" style="margin-top:8px">Notificações, oposições, medidas administrativas e judiciais contra infrações e uso indevido.</p></div>
+</div>
+<div style="margin-top:24px;border-radius:20px;padding:32px 36px;display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center;border:1px solid rgba(167,139,250,.3);background:linear-gradient(90deg,rgba(124,58,237,.18),rgba(124,58,237,.04));box-sizing:border-box">
+<div style="flex:1 1 440px;display:flex;gap:20px;align-items:center"><div style="display:flex;align-items:center;gap:8px;flex:none" aria-hidden="true"><span style="font-family:'Sora',sans-serif;font-weight:700;font-size:15px;padding:8px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.2)">ADV</span><span style="color:#A78BFA;font-weight:700">+</span><span style="font-family:'Sora',sans-serif;font-weight:700;font-size:15px;padding:8px 12px;border-radius:10px;background:#7C3AED">PI</span></div><div><h3>ADV + PI atuam de forma integrada</h3><p class="small" style="margin-top:6px">A proteção de ativos pode envolver procedimentos administrativos, contratos, negociações, notificações e medidas judiciais.</p></div></div>
+<a class="btn" href="Visual-Advocacia.dc.html">Conheça nossa atuação em conflitos <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</section>
+
+<!-- 06 AUTORIDADE -->
+<section class="sec" style="background:radial-gradient(50% 60% at 15% 50%,rgba(109,40,217,.16),rgba(7,7,13,0) 70%)">
+<div class="wrap">
+<div class="eyebrow">Autoridade em propriedade intelectual</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:20px;margin-top:8px">
+<div class="card" style="padding:36px;display:flex;flex-wrap:wrap;gap:32px;align-items:center">
+<img src="/_blob/22c69adc043fe22d6ec8fca0c78fe615" alt="Capa do livro Contrafação de Marca, de Arno Ribeiro Rocha" style="width:150px;height:auto;border-radius:6px;box-shadow:0 24px 60px -18px rgba(124,58,237,.75),0 0 0 1px rgba(255,255,255,.08);display:block">
+<div style="flex:1 1 220px">
+<div class="tiny" style="letter-spacing:.18em;text-transform:uppercase;color:#A78BFA;font-weight:600">Pesquisa também faz parte da nossa prática</div>
+<h3 style="margin-top:14px;font-size:24px">Contrafação de Marca</h3>
+<p class="small" style="margin-top:12px">Obra que analisa os critérios de fixação de indenizações em casos de contrafação de marca, conectando propriedade intelectual, responsabilidade civil e reparação de danos.</p>
+<p class="tiny" style="margin-top:10px">Editora Dialética · 2023</p>
+<a class="btn sm" href="#" style="margin-top:22px">Conheça o livro</a>
+</div>
+</div>
+<div class="card" style="padding:0;overflow:hidden;display:flex;flex-wrap:wrap">
+<img src="/_blob/1a64fe98f14ddbe6c6b30eeeb7ab75f2" alt="Arno Ribeiro Rocha, advogado e fundador" style="flex:1 1 200px;width:200px;min-height:320px;object-fit:cover;object-position:top;display:block">
+<div style="flex:1 1 240px;padding:36px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center">
+<div class="tiny" style="letter-spacing:.18em;text-transform:uppercase;color:#A78BFA;font-weight:600">Formação e experiência em PI</div>
+<h3 style="margin-top:14px;font-size:24px">Arno Ribeiro Rocha</h3>
+<p class="small" style="margin-top:12px">Advogado, pesquisador e autor. Mestre em Propriedade Intelectual e Transferência de Tecnologia para Inovação pela UFSC, com mais de 15 anos de atuação jurídica.</p>
+<a class="btn sm" href="Visual-Advocacia.dc.html" style="margin-top:22px;align-self:flex-start">Conheça o fundador</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 07 PROVA SOCIAL -->
+<section class="sec line-top">
+<div class="wrap">
+<div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-end;margin-bottom:36px">
+<div><div class="eyebrow">Depoimentos</div><h2>Experiência reconhecida por nossos clientes</h2></div>
+<p class="small" style="display:flex;gap:8px;align-items:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"></path><circle cx="12" cy="9" r="2.5"></circle></svg>Florianópolis · SC, com atuação nacional e internacional.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px">
+<figure class="card" style="margin:0;padding:32px;display:flex;flex-direction:column;justify-content:space-between;gap:28px"><div><svg width="32" height="24" viewBox="0 0 32 24" fill="#7C3AED" aria-hidden="true"><path d="M0 24V13C0 5.8 4.4 1.4 11 0l1.4 3.2C8.6 4.6 6.8 7.2 6.6 10.4H12V24zm18 0V13c0-7.2 4.4-11.6 11-13l1.4 3.2c-3.8 1.4-5.6 4-5.8 7.2H30V24z"></path></svg><blockquote style="margin:18px 0 0;font-size:16px;line-height:1.6;color:#E4E1F2">Contar com o Futuro Rocha foi crucial para resolver nossa disputa de propriedade intelectual. […]</blockquote></div><figcaption style="display:flex;gap:14px;align-items:center"><span aria-hidden="true" style="width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#7C3AED,#2E1065);font-family:'Sora',sans-serif;font-weight:600;font-size:14px">JC</span><span><span style="display:block;font-weight:600">Jonathan Cardoso</span><span class="tiny">CEO da Metaverso, DF</span></span></figcaption></figure>
+<figure class="card" style="margin:0;padding:32px;display:flex;flex-direction:column;justify-content:space-between;gap:28px"><div><svg width="32" height="24" viewBox="0 0 32 24" fill="#7C3AED" aria-hidden="true"><path d="M0 24V13C0 5.8 4.4 1.4 11 0l1.4 3.2C8.6 4.6 6.8 7.2 6.6 10.4H12V24zm18 0V13c0-7.2 4.4-11.6 11-13l1.4 3.2c-3.8 1.4-5.6 4-5.8 7.2H30V24z"></path></svg><blockquote style="margin:18px 0 0;font-size:16px;line-height:1.6;color:#E4E1F2">O Futuro Rocha desempenhou um papel fundamental em proteger nossa marca no INPI BR de forma eficiente e oportuna. […]</blockquote></div><figcaption style="display:flex;gap:14px;align-items:center"><span aria-hidden="true" style="width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#7C3AED,#2E1065);font-family:'Sora',sans-serif;font-weight:600;font-size:14px">CM</span><span><span style="display:block;font-weight:600">Celso Martello Junior</span><span class="tiny">CEO da Insight Influencers, SC</span></span></figcaption></figure>
+<figure class="card" style="margin:0;padding:32px;display:flex;flex-direction:column;justify-content:space-between;gap:28px"><div><svg width="32" height="24" viewBox="0 0 32 24" fill="#7C3AED" aria-hidden="true"><path d="M0 24V13C0 5.8 4.4 1.4 11 0l1.4 3.2C8.6 4.6 6.8 7.2 6.6 10.4H12V24zm18 0V13c0-7.2 4.4-11.6 11-13l1.4 3.2c-3.8 1.4-5.6 4-5.8 7.2H30V24z"></path></svg><blockquote style="margin:18px 0 0;font-size:16px;line-height:1.6;color:#E4E1F2">Depositamos nossa confiança no Futuro Rocha para conduzir os processos de registro de nossas marcas no INPI BR. […]</blockquote></div><figcaption style="display:flex;gap:14px;align-items:center"><span aria-hidden="true" style="width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#7C3AED,#2E1065);font-family:'Sora',sans-serif;font-weight:600;font-size:14px">DS</span><span><span style="display:block;font-weight:600">Dartagnan Sant'Anna</span><span class="tiny">CEO da Bella Hub, RS</span></span></figcaption></figure>
+</div>
+</div>
+</section>
+
+<!-- 08 MÍDIA -->
+<section class="sec" style="padding-top:40px">
+<div class="wrap">
+<div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-end;margin-bottom:40px">
+<div style="max-width:620px"><div class="eyebrow">Futuro Rocha na mídia</div><h2>Conhecimento jurídico em movimento</h2><p class="muted" style="margin-top:16px">Entrevistas, participações e orientações sobre PI, tecnologia e inovação.</p></div>
+<a class="btn" href="https://www.youtube.com/@futurorocha/featured"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.6 2.6 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.6 2.6 0 0 0 2.4 7.2 27 27 0 0 0 2 12a27 27 0 0 0 .4 4.8 2.6 2.6 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.6 2.6 0 0 0 1.8-1.8A27 27 0 0 0 22 12a27 27 0 0 0-.4-4.8zM10 15V9l5.2 3z"></path></svg>Acessar canal no YouTube</a>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px">
+<a class="short" href="https://www.youtube.com/shorts/So8qnnPl5jU" style="background:radial-gradient(90% 60% at 30% 20%,rgba(124,58,237,.55),rgba(7,7,13,0) 70%),linear-gradient(180deg,#171332,#09080F)"><span class="play" style="position:absolute;top:50%;left:50%;width:56px;height:56px;margin:-28px 0 0 -28px"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></span><span class="tiny" style="letter-spacing:.18em;text-transform:uppercase;color:#C4B5FD">Short · 01</span><span style="font-family:'Sora',sans-serif;font-weight:600;font-size:16px">Assistir</span></a>
+<a class="short" href="https://www.youtube.com/shorts/pAMeb4USw28" style="background:radial-gradient(90% 60% at 70% 30%,rgba(124,58,237,.5),rgba(7,7,13,0) 70%),linear-gradient(180deg,#141029,#09080F)"><span class="play" style="position:absolute;top:50%;left:50%;width:56px;height:56px;margin:-28px 0 0 -28px"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></span><span class="tiny" style="letter-spacing:.18em;text-transform:uppercase;color:#C4B5FD">Short · 02</span><span style="font-family:'Sora',sans-serif;font-weight:600;font-size:16px">Assistir</span></a>
+<a class="short" href="https://www.youtube.com/shorts/ByuWSyQU7Is" style="background:radial-gradient(90% 60% at 40% 70%,rgba(124,58,237,.5),rgba(7,7,13,0) 70%),linear-gradient(180deg,#171332,#09080F)"><span class="play" style="position:absolute;top:50%;left:50%;width:56px;height:56px;margin:-28px 0 0 -28px"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></span><span class="tiny" style="letter-spacing:.18em;text-transform:uppercase;color:#C4B5FD">Short · 03</span><span style="font-family:'Sora',sans-serif;font-weight:600;font-size:16px">Assistir</span></a>
+<a class="short" href="https://www.youtube.com/shorts/xuin6mc1mHw" style="background:radial-gradient(90% 60% at 60% 25%,rgba(124,58,237,.55),rgba(7,7,13,0) 70%),linear-gradient(180deg,#141029,#09080F)"><span class="play" style="position:absolute;top:50%;left:50%;width:56px;height:56px;margin:-28px 0 0 -28px"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></span><span class="tiny" style="letter-spacing:.18em;text-transform:uppercase;color:#C4B5FD">Short · 04</span><span style="font-family:'Sora',sans-serif;font-weight:600;font-size:16px">Assistir</span></a>
+</div>
+</div>
+</section>
+
+<!-- 09 CTA FINAL -->
+<section class="sec" id="contato" style="padding-top:40px">
+<div class="wrap">
+<div style="position:relative;overflow:hidden;border-radius:28px;padding:56px 48px;text-align:center;border:1px solid rgba(167,139,250,.35);background:radial-gradient(70% 120% at 50% 0%,rgba(124,58,237,.45),rgba(7,7,13,0) 65%),linear-gradient(180deg,#120F24,#08070F);box-sizing:border-box">
+<div aria-hidden="true" style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(60% 80% at 50% 0%,#000,transparent 80%);-webkit-mask-image:radial-gradient(60% 80% at 50% 0%,#000,transparent 80%)"></div>
+<img src="/_blob/e0e2aa3abea3148b1dc6b55bec652228" alt="" aria-hidden="true" style="position:absolute;left:0;right:0;bottom:0;width:100%;height:75%;object-fit:cover;object-position:center bottom;opacity:.6;display:block">
+<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,7,15,.2) 0%,rgba(8,7,15,.55) 55%,rgba(8,7,15,.1) 100%)"></div>
+<div style="position:relative;max-width:640px;margin:0 auto">
+<div class="eyebrow" style="justify-content:center">Fale com o Futuro Rocha PI</div>
+<h2 style="font-size:clamp(32px,4.2vw,52px)">Vamos proteger seus ativos?</h2>
+<p class="muted" style="margin-top:18px">Conte brevemente sua necessidade. Analisaremos o contexto para direcionar a forma adequada de atuação.</p>
+<div class="btns" style="justify-content:center;margin-top:36px"><a class="btn pri" href="Visual-Advocacia.dc.html">Solicite uma análise <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><a class="btn" href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.2-4.5A9 9 0 1 1 21 12z"></path></svg>WhatsApp</a></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot" style="border-top:1px solid rgba(255,255,255,.07);padding:48px 0 28px">
+<div class="wrap">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;align-items:start">
+<div><img src="/_blob/49a973fa691e3dd78440b7579b33fe29" alt="Futuro Rocha Advogados e Futuro Rocha Propriedade Intelectual" style="width:240px;height:auto;display:block"><p class="tiny" style="margin-top:16px;max-width:260px">Direito. Tecnologia. Negócios. Para o seu futuro.</p></div>
+<div><div class="tiny" style="letter-spacing:.18em;text-transform:uppercase;color:#A78BFA;font-weight:600;margin-bottom:14px">Contato</div><div class="small" style="display:flex;flex-direction:column;gap:8px"><a href="mailto:contato@futurorocha.com.br">contato@futurorocha.com.br</a><span>Florianópolis · SC</span><a href="#">WhatsApp</a></div></div>
+<div><div class="tiny" style="letter-spacing:.18em;text-transform:uppercase;color:#A78BFA;font-weight:600;margin-bottom:14px">Redes</div><div class="small" style="display:flex;flex-direction:column;gap:8px"><a href="https://www.youtube.com/@futurorocha/featured">YouTube</a><a href="#">LinkedIn</a><a href="#">Instagram</a></div></div>
+<div><div class="tiny" style="letter-spacing:.18em;text-transform:uppercase;color:#A78BFA;font-weight:600;margin-bottom:14px">Institucional</div><div class="small" style="display:flex;flex-direction:column;gap:8px"><a href="#">Privacidade</a><a href="#">Termos de Uso</a></div></div>
+</div>
+<div class="tiny" style="margin-top:32px;padding-top:20px;border-top:1px solid rgba(255,255,255,.07)">© [ano automático] Futuro Rocha. Todos os direitos reservados.</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":8000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

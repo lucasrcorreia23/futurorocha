@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Wireframe — Advocacia</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0;background:#ffffff;color:#1f1f1f;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:#1f1f1f}a:hover{color:#000000}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px;box-sizing:border-box}
+.sec{border-top:1px dashed #bdbdbd;padding:56px 0}
+.tag{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#595959;margin-bottom:18px}
+.num{background:#1f1f1f;color:#ffffff;padding:2px 8px;border-radius:2px;letter-spacing:0}
+.src{color:#595959;border:1px solid #bdbdbd;padding:1px 8px;border-radius:10px;text-transform:none;letter-spacing:0}
+h1{font-size:40px;line-height:1.15;margin:0 0 16px}
+h2{font-size:28px;line-height:1.2;margin:0 0 12px}
+h3{font-size:17px;line-height:1.3;margin:0 0 6px}
+p{margin:0 0 12px;line-height:1.55;font-size:15px}
+.muted{color:#4d4d4d}
+.small{font-size:13px;line-height:1.5;color:#4d4d4d}
+.box{border:1px solid #bdbdbd;border-radius:4px;padding:20px;background:#ffffff;box-sizing:border-box}
+.ph{background:#ececec;border:1px solid #c9c9c9;display:flex;align-items:center;justify-content:center;text-align:center;color:#4d4d4d;font-size:12px;padding:12px;box-sizing:border-box}
+.btn{display:inline-block;border:1.5px solid #1f1f1f;padding:12px 18px;font-size:13px;font-weight:600;color:#1f1f1f;text-decoration:none;min-height:44px;box-sizing:border-box}
+.btn.pri{background:#1f1f1f;color:#ffffff}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+ul.list{margin:10px 0 0;padding-left:18px;font-size:13px;color:#4d4d4d;line-height:1.7}
+details{border:1px solid #bdbdbd;border-radius:4px;margin-bottom:8px;background:#ffffff}
+summary{cursor:pointer;padding:16px 20px;display:flex;justify-content:space-between;gap:16px;align-items:center;list-style:none}
+summary::-webkit-details-marker{display:none}
+.acc-body{padding:0 20px 16px}
+.plus{font-weight:700;font-size:18px}
+.field{display:flex;flex-direction:column;gap:6px;font-size:13px}
+.field input,.field select,.field textarea{border:1px solid #9e9e9e;border-radius:3px;padding:10px;font:inherit;min-height:44px;box-sizing:border-box;background:#ffffff}
+</style>
+</helmet>
+<div style="width:100%">
+
+<!-- HEADER -->
+<div style="border-bottom:1px solid #bdbdbd">
+<div class="wrap" style="display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px">
+<div class="ph" style="width:180px;height:44px">[LOGO FUTURO ROCHA ADVOGADOS]</div>
+<nav aria-label="Principal" style="display:flex;flex-wrap:wrap;gap:20px;font-size:13px"><a href="#">Início</a><a href="Advocacia-sem-fotos.dc.html" style="font-weight: 700; text-decoration: underline">Advocacia</a><a href="Main-sem-fotos.dc.html">Propriedade Intelectual</a><a href="Main-sem-fotos.dc.html">Raio X BLINVS</a><a href="#contato">Contato</a></nav>
+<a class="btn" href="Main-sem-fotos.dc.html">Fazer diagnóstico →</a>
+</div>
+</div>
+
+<!-- 01 HERO -->
+<div class="wrap" style="padding-top:56px;padding-bottom:56px">
+<div class="tag"><span class="num">01</span>Abertura</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;align-items:center">
+<div>
+<div class="small" style="text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px">Futuro Rocha ADV</div>
+<h1>Advocacia empresarial, civil e digital.</h1>
+<p style="font-size:18px;font-weight:600">Da estruturação das relações à defesa em conflitos.</p>
+<div class="muted"><p>Assessoramos empresas, empresários, sócios e profissionais, bem como projetos e novos empreendimentos, na estruturação de relações jurídicas, contratos e prevenção de riscos. Representamos nossos clientes em negociações, procedimentos administrativos e demandas judiciais.</p></div>
+<div class="btns">
+<a class="btn pri" href="#contato">Solicite atendimento →</a>
+<a class="btn" href="#areas">Ver áreas de atuação</a>
+</div>
+</div>
+<div class="ph" style="height:340px">[IMAGEM DESTAQUE — referência do cliente: prédios / cidade]</div>
+</div>
+</div>
+
+<!-- 02 PARA QUEM -->
+<div class="sec">
+<div class="wrap">
+<div class="tag"><span class="num">02</span>Para quem atuamos</div>
+<h2>Diferentes clientes. Diferentes necessidades jurídicas.</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:20px">
+<div class="box"><div class="ph" style="width:44px;height:44px;margin-bottom:10px">[ícone]</div><h3>Empresas</h3><div class="small"><p>Assessoria jurídica para a operação, contratos, crescimento e solução de conflitos.</p></div></div>
+<div class="box"><div class="ph" style="width:44px;height:44px;margin-bottom:10px">[ícone]</div><h3>Empresários e sócios</h3><div class="small"><p>Segurança jurídica nas relações societárias, negociações e decisões empresariais.</p></div></div>
+<div class="box"><div class="ph" style="width:44px;height:44px;margin-bottom:10px">[ícone]</div><h3>Profissionais</h3><div class="small"><p>Contratos, responsabilidade, imagem, conteúdo e proteção de direitos e ativos.</p></div></div>
+<div class="box"><div class="ph" style="width:44px;height:44px;margin-bottom:10px">[ícone]</div><h3>Startups e novos negócios</h3><div class="small"><p>Estruturação jurídica desde as primeiras decisões até o crescimento da operação.</p></div></div>
+<div class="box"><div class="ph" style="width:44px;height:44px;margin-bottom:10px">[ícone]</div><h3>Projetos</h3><div class="small"><p>Estruturação de relações, contratos e proteção jurídica conforme as características de cada iniciativa.</p></div></div>
+</div>
+</div>
+</div>
+
+<!-- 03 ÁREAS -->
+<div class="sec" id="areas">
+<div class="wrap">
+<div class="tag"><span class="num">03</span>Áreas de atuação — lista expansível</div>
+<h2>Áreas de atuação</h2>
+<p class="muted" style="margin-bottom:24px">Estruturar · Contratar · Proteger · Prevenir · Resolver · Defender.</p>
+<details open="open">
+<summary><div><h3>Direito Empresarial e Societário</h3><div class="small"><p style="font-size: 13px"><b>Estruturação de relações empresariais e societárias, reorganizações e conflitos.</b></p></div></div><span class="plus" aria-hidden="true">−</span></summary>
+<div class="acc-body"><ul class="list"><li>Planejamento e organização societária</li><li>Acordos de sócios e quotistas</li><li>Entrada e saída de sócios, reorganizações</li><li>Negociações e conflitos societários</li></ul></div>
+</details>
+<details>
+<summary><div><h3>Contratos</h3><div class="small"><b>Elaboração, revisão, negociação e acompanhamento de relações contratuais.</b></div></div><span class="plus" aria-hidden="true">+</span></summary>
+<div class="acc-body"><ul class="list"><li>Contratos civis, empresariais e tecnológicos</li><li>Prestação de serviços e parcerias</li><li>Revisão e negociação contratual</li><li>Inadimplemento e encerramento de relações contratuais</li></ul></div>
+</details>
+<details>
+<summary><div><h3>Direito Civil e Obrigações</h3><div class="small"><b>Atuação em obrigações, relações patrimoniais, cobranças e conflitos privados.</b></div></div><span class="plus" aria-hidden="true">+</span></summary>
+<div class="acc-body"><ul class="list"><li>Cobranças e obrigações</li><li>Relações patrimoniais</li><li>Conflitos decorrentes de relações privadas</li></ul></div>
+</details>
+<details>
+<summary><div><h3>Responsabilidade Civil e Indenizações</h3><div class="small"><b>Atuação em demandas envolvendo responsabilidade, reparação de danos e defesa.</b></div></div><span class="plus" aria-hidden="true">+</span></summary>
+<div class="acc-body"><ul class="list"><li>Responsabilidade civil empresarial</li><li>Responsabilidade civil digital e por sistemas automatizados</li><li>Pedidos e defesa em indenizações</li><li>Defesa em ações de responsabilidade civil</li></ul></div>
+</details>
+<details>
+<summary><div><h3>Direito Digital</h3><div class="small"><b>Plataformas, perfis, conteúdo, imagem, software e fraudes.</b></div></div><span class="plus" aria-hidden="true">+</span></summary>
+<div class="acc-body"><ul class="list"><li>Marco Civil da Internet</li><li>Remoção de conteúdo e perfis falsos</li><li>Recuperação de contas empresariais</li><li>Ações de obrigação de fazer contra plataformas</li><li>Cumprimento de sentença contra big techs</li><li>Termos de uso, políticas e compliance digital</li></ul></div>
+</details>
+<details>
+<summary><div><h3>Privacidade e Proteção de Dados</h3><div class="small"><b>LGPD, políticas, contratos, incidentes e conflitos.</b></div></div><span class="plus" aria-hidden="true">+</span></summary>
+<div class="acc-body"><ul class="list"><li>Programas de adequação à LGPD</li><li>DPO as a Service</li><li>Auditoria de conformidade e relatórios de impacto (DPIA)</li><li>Políticas de privacidade, cookies e cláusulas de dados</li><li>Gestão de incidentes e vazamento de dados</li><li>Treinamentos corporativos</li><li>Defesa em ações judiciais e administrativas</li></ul></div>
+</details>
+<details>
+<summary><div><h3>Relações de Consumo</h3><div class="small"><b>Atuação preventiva, administrativa e judicial.</b></div></div><span class="plus" aria-hidden="true">+</span></summary>
+<div class="acc-body"><ul class="list"><li>Orientação preventiva</li><li>Reclamações e procedimentos administrativos</li><li>Negociação de conflitos</li><li>Ações judiciais e defesa de fornecedores</li></ul></div>
+</details>
+<details>
+<summary><div><h3>Contencioso e Solução de Conflitos</h3><div class="small"><b>Atuação estratégica na prevenção, negociação e condução de conflitos administrativos e judiciais.</b></div></div><span class="plus" aria-hidden="true">+</span></summary>
+<div class="acc-body"><ul class="list"><li>Negociações e soluções extrajudiciais</li><li>Notificações e contranotificações</li><li>Ações judiciais, defesas, recursos e medidas de urgência</li><li>Cumprimento de sentença e decisões judiciais</li></ul></div>
+</details>
+</div>
+</div>
+
+<!-- 04 STARTUPS -->
+<div class="sec">
+<div class="wrap">
+<div class="tag"><span class="num">04</span>Destaque — Startups, inovação e investimentos</div>
+<div class="box" style="padding:32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:32px">
+<div>
+<h2>Startups, inovação e investimentos</h2>
+<p class="muted">Estruturação jurídica para startups, projetos de inovação e operações de investimento.</p>
+<a class="btn" href="#contato">Falar sobre meu projeto →</a>
+</div>
+<ul class="list" style="margin:0">
+<li>Modelagem jurídica de startups</li>
+<li>Acordo de sócios (vesting, cliff, lock-up)</li>
+<li>SAFE, mútuo conversível e instrumentos híbridos</li>
+<li>Term Sheet para investimento</li>
+<li>Planejamento societário para rodadas</li>
+<li>Cap table e governança</li>
+<li>Estruturação de SPEs e spin-offs</li>
+<li>Assessoria jurídica a fundadores</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- 05 COMO ATUAMOS -->
+<div class="sec">
+<div class="wrap">
+<div class="tag"><span class="num">05</span>Como atuamos</div>
+<h2>Como atuamos</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:20px">
+<div class="box"><div style="font-size:28px;font-weight:700">01</div><h3>Consultivo e preventivo</h3><div class="small">Estruturação jurídica, contratos, análise de riscos e orientação para decisões e relações do negócio.</div></div>
+<div class="box"><div style="font-size:28px;font-weight:700">02</div><h3>Extrajudicial e negociação</h3><div class="small">Negociações, notificações, contranotificações, composição de conflitos e formalização de acordos.</div></div>
+<div class="box"><div style="font-size:28px;font-weight:700">03</div><h3>Administrativo e judicial</h3><div class="small">Representação em procedimentos administrativos, ações judiciais, defesas, recursos e cumprimento de decisões.</div></div>
+</div>
+</div>
+</div>
+
+<!-- 06 CONFLITO -->
+<div class="sec">
+<div class="wrap">
+<div class="tag"><span class="num">06</span>Quando o conflito exige atuação jurídica</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:32px;align-items:start">
+<div>
+<h2>Da negociação ao processo judicial.</h2>
+<div class="muted"><p>Atuamos na prevenção, negociação e solução de conflitos, bem como em procedimentos administrativos e demandas judiciais envolvendo relações empresariais, civis, contratuais, digitais e de propriedade intelectual.</p></div>
+<a class="btn pri" href="#contato">Falar sobre meu caso →</a>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px">
+<div class="box">○ Contratos e inadimplemento</div>
+<div class="box">○ Cobranças e obrigações</div>
+<div class="box">○ Responsabilidade civil e indenizações</div>
+<div class="box">○ Conflitos empresariais e societários</div>
+<div class="box">○ Plataformas e ambiente digital</div>
+<div class="box">○ Propriedade Intelectual → <a href="Main-sem-fotos.dc.html">ver PI</a></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 07 DIFERENCIAIS -->
+<div class="sec">
+<div class="wrap">
+<div class="tag"><span class="num">07</span>Por que o Futuro Rocha</div>
+<h2>Por que o Futuro Rocha?</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:20px">
+<div class="box"><div class="ph" style="width:44px;height:44px;margin-bottom:10px">[ícone]</div><h3>Visão jurídica integrada</h3><div class="small">Relações, contratos, riscos e ativos analisados em conjunto.</div></div>
+<div class="box"><div class="ph" style="width:44px;height:44px;margin-bottom:10px">[ícone]</div><h3>Especialização jurídica</h3><div class="small">Experiência em Direito Empresarial, PI, contratos e tecnologia.</div></div>
+<div class="box"><div class="ph" style="width:44px;height:44px;margin-bottom:10px">[ícone]</div><h3>Consultivo e contencioso</h3><div class="small">Da prevenção e negociação à atuação administrativa e judicial.</div></div>
+<div class="box"><div class="ph" style="width:44px;height:44px;margin-bottom:10px">[ícone]</div><h3>Demandas complexas</h3><div class="small">Atuação em questões que envolvem diferentes áreas do Direito.</div></div>
+</div>
+</div>
+</div>
+
+<!-- 08 PLANOS -->
+<div class="sec">
+<div class="wrap">
+<div class="tag"><span class="num">08</span>Assessoria jurídica recorrente — Planos</div>
+<h2>Planos Futuro Rocha</h2>
+<p class="muted" style="margin-bottom:24px">Jurídico presente na rotina da empresa, do profissional ou do projeto — com escopo, prioridades e rotina definidos em proposta e contrato.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px">
+<div class="box"><h3>Origem</h3><div class="small" style="font-weight:700">Estruturação inicial</div><p class="small">Primeiras prioridades jurídicas, relações entre participantes, contratos essenciais e proteção de ativos.</p><a class="btn" href="#contato">Solicitar proposta</a></div>
+<div class="box"><h3>Órbita</h3><div class="small" style="font-weight:700">Organização da operação</div><p class="small">Demandas recorrentes, contratos e relações empresariais ou societárias.</p><a class="btn" href="#contato">Solicitar proposta</a></div>
+<div class="box"><h3>Vetor</h3><div class="small" style="font-weight:700">Crescimento e estruturação</div><p class="small">Novas decisões, negociações, mudanças societárias e proteção de ativos</p><a class="btn" href="#contato">Solicitar proposta</a></div>
+<div class="box"><h3>Space</h3><div class="small" style="font-weight:700">Operações de maior complexidade</div><p class="small">Acompanhamento mais próximo de demandas simultâneas e de maior complexidade.</p><a class="btn" href="#contato">Solicitar proposta</a></div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:24px">
+<div><h3>01 Diagnóstico</h3><div class="small">Compreendemos o momento, o contexto e as necessidades.</div></div>
+<div><h3>02 Definição de escopo</h3><div class="small">Definimos atividades, prioridades, disponibilidade e condições.</div></div>
+<div><h3>03 Acompanhamento</h3><div class="small">Organizamos a rotina de atendimento e os encaminhamentos.</div></div>
+</div>
+</div>
+</div>
+
+<!-- 09 QUEM SOMOS -->
+<div class="sec" id="fundador">
+<div class="wrap">
+<div class="tag"><span class="num">09</span>Quem somos e fundador</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:32px;align-items:stretch">
+<div>
+<h2>Conheça o Futuro Rocha.</h2>
+<p class="muted">Atuação empresarial, civil e digital, com experiência em contratos, tecnologia, propriedade intelectual e solução de conflitos.</p>
+<div class="ph" style="height: 260px; margin-top: 12px; flex-direction: column; gap: 8px; background-color: #ECECEC">[VÍDEO INSTITUCIONAL 16:9 — YouTube, sem autoplay]<br></div>
+</div>
+<div class="box" style="display:flex;flex-wrap:wrap;gap:20px;align-items:stretch">
+<div class="ph" style="width:180px;min-height:240px;align-self:stretch">[FOTO DO FUNDADOR]</div>
+<div style="flex:1 1 220px">
+<h3>Arno Ribeiro Rocha</h3>
+<div class="small" style="font-weight:700;margin-bottom:8px">Advogado, fundador e autor</div>
+<ul class="list" style="margin-top:0"><li>Mestrado em Propriedade Intelectual e Transferência de Tecnologia para Inovação — UFSC</li><li>MBA Internacional em Gestão Executiva — Faculdade Damásio</li><li>Formação em Direito para Startups — FGV</li><li>Graduação em Direito — IPA</li></ul>
+<p class="small" style="margin-top:10px">Mais de 15 anos de atuação jurídica, com experiência em propriedade intelectual, contratos e litígios civis e empresariais, além de tecnologia, inovação e estruturação jurídica de empresas e projetos.</p>
+</div>
+</div>
+</div>
+<div class="box" style="margin-top:20px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center">
+<div style="flex:1 1 420px"><h3>Atuação em parceria</h3><div class="small">Expertise complementar para escritórios, departamentos jurídicos, consultorias, empresas e profissionais — com escopo e responsabilidades definidos.</div></div>
+<a class="btn" href="#contato">Fale conosco sobre parcerias →</a>
+</div>
+</div>
+</div>
+
+<!-- 10 CONTATO -->
+<div class="sec" id="contato">
+<div class="wrap">
+<div class="tag"><span class="num">10</span>Contato</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;align-items:start">
+<div>
+<h2>Converse com o Futuro Rocha.</h2>
+<p class="muted">Conte brevemente sua necessidade. A partir das informações iniciais, identificaremos a natureza da demanda e a melhor forma de direcionar o atendimento.</p>
+<div class="small">contato@futurorocha.com.br<br>Florianópolis - SC</div>
+<div class="btns"><a class="btn" href="#">Atendimento pelo WhatsApp</a></div>
+</div>
+<form class="box" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
+<label class="field">Nome *<input type="text"></label>
+<label class="field">E-mail *<input type="email"></label>
+<label class="field">Telefone<input type="tel"></label>
+<label class="field">Empresa / atividade / projeto<input type="text"></label>
+<label class="field" style="grid-column:1 / -1">Assunto<select><option>Advocacia</option><option>Contratos</option><option>Ação ou conflito judicial</option><option>Planos de assessoria</option><option>Parcerias profissionais</option><option>Outros</option></select></label>
+<label class="field" style="grid-column:1 / -1">Como podemos ajudar? *<textarea rows="4"></textarea></label>
+<div class="small" style="grid-column:1 / -1">Evite enviar documentos ou informações sensíveis neste primeiro contato. <a href="#">Política de Privacidade</a></div>
+<div style="grid-column:1 / -1"><button type="button" class="btn pri">Enviar mensagem →</button></div>
+</form>
+</div>
+</div>
+</div>
+
+<!-- FOOTER -->
+<div style="border-top:1px solid #bdbdbd;padding:40px 0">
+<div class="wrap" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px">
+<div style="display:flex;flex-direction:column;gap:10px"><div class="ph" style="width:220px;height:48px">[LOGO ADV + PI (as duas juntas)]</div></div>
+<div class="small" style="height: 62px">contato@futurorocha.com.br<br>Florianópolis · SC<br>WhatsApp</div>
+<div class="small" style="height: 45px">Privacidade · Termos de Uso<br>YouTube · LinkedIn · Instagram</div>
+<div class="small" style="height: 25px">© [ano automático] Futuro Rocha</div>
+</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":6000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Futuro Rocha — Advocacia</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Sora:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#07070D;color:#F4F3FA;font-family:'Inter',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#C4B5FD}a:hover{color:#EDE9FE}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #A78BFA;outline-offset:3px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.sec{padding:80px 0;position:relative}
+.line-top{border-top:1px solid rgba(255,255,255,.07)}
+.eyebrow{display:flex;align-items:center;gap:12px;margin:0 0 20px;font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#A78BFA}
+.eyebrow::before{content:"";width:28px;height:1px;background:linear-gradient(90deg,#8B5CF6,transparent)}
+h1,h2,h3,h4{font-family:'Sora',sans-serif;margin:0;letter-spacing:-.02em;color:#F7F6FC}
+h1{font-size:clamp(38px,5.2vw,62px);line-height:1.04;font-weight:600}
+h2{font-size:clamp(30px,3.6vw,44px);line-height:1.1;font-weight:600}
+h3{font-size:19px;line-height:1.3;font-weight:600}
+h4{font-size:16px;line-height:1.35;font-weight:600}
+p{margin:0;line-height:1.65}
+.lead{font-size:19px;line-height:1.55;color:#E4E1F2}
+.muted{font-size:16px;color:#A9A6BD}
+.small{font-size:14px;line-height:1.6;color:#A9A6BD}
+.tiny{font-size:12px;line-height:1.55;color:#8E8BA3}
+.card{position:relative;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.012));border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:28px;box-sizing:border-box;transition:border-color .25s,background .25s,transform .25s}
+.card.hov:hover{border-color:rgba(167,139,250,.45);background:linear-gradient(180deg,rgba(139,92,246,.08),rgba(255,255,255,.015));transform:translateY(-2px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;border:1px solid rgba(255,255,255,.22);font-size:14px;font-weight:600;letter-spacing:.01em;color:#F4F3FA;text-decoration:none;box-sizing:border-box;transition:background .2s,border-color .2s,box-shadow .2s;white-space:nowrap;background:transparent;font-family:inherit;cursor:pointer}
+.btn:hover{border-color:#A78BFA;color:#FFFFFF;background:rgba(139,92,246,.1)}
+.btn.pri{background:#7C3AED;border-color:#7C3AED;box-shadow:0 10px 34px -10px rgba(124,58,237,.85)}
+.btn.pri:hover{background:#8B5CF6;border-color:#8B5CF6}
+.btn.sm{min-height:44px;padding:0 18px;font-size:13px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.ico{width:48px;height:48px;flex:none;border-radius:14px;display:flex;align-items:center;justify-content:center;background:rgba(124,58,237,.14);border:1px solid rgba(167,139,250,.28);color:#C4B5FD}
+.ico svg{width:24px;height:24px}
+.nav a{color:#C9C6D9;text-decoration:none;font-size:14px;font-weight:500;padding:10px 2px;border-bottom:1px solid transparent}
+.nav a:hover{color:#FFFFFF}
+.nav a.on{color:#FFFFFF;border-bottom-color:#8B5CF6}
+ul.dots{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column;gap:9px}
+ul.dots li{position:relative;padding-left:18px;font-size:14px;line-height:1.5;color:#B9B6CC}
+ul.dots li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:#8B5CF6;box-shadow:0 0 10px rgba(139,92,246,.8)}
+details.acc{border-bottom:1px solid rgba(255,255,255,.09)}
+details.acc summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px 4px}
+details.acc summary::-webkit-details-marker{display:none}
+details.acc .pm{width:40px;height:40px;flex:none;border-radius:50%;border:1px solid rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;color:#C4B5FD;transition:transform .25s,background .25s,border-color .25s}
+details.acc[open] .pm{transform:rotate(45deg);background:#7C3AED;border-color:#7C3AED;color:#FFFFFF}
+details.acc summary:hover h3{color:#C4B5FD}
+details.acc .body{padding:0 4px 26px 52px}
+details.acc ul.dots{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px 28px;margin:0}
+.step-n{font-family:'Sora',sans-serif;font-size:12px;font-weight:600;letter-spacing:.16em;color:#A78BFA}
+.play{width:68px;height:68px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(124,58,237,.9);box-shadow:0 0 0 10px rgba(124,58,237,.18),0 12px 40px -6px rgba(124,58,237,.9);color:#FFFFFF}
+.video{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-decoration:none;border-radius:18px;overflow:hidden;border:1px solid rgba(167,139,250,.3);background:radial-gradient(120% 90% at 70% 20%,rgba(124,58,237,.45),rgba(7,7,13,0) 60%),linear-gradient(160deg,#151229,#0A0915);color:#F4F3FA}
+.video:hover .play{background:#8B5CF6}
+.chk{display:flex;gap:14px;align-items:center;padding:18px 20px;border-radius:14px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.02);font-size:15px;color:#E4E1F2}
+.chk svg{flex:none;color:#A78BFA}
+.field{display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:500;color:#C9C6D9}
+.field input,.field select,.field textarea{font:inherit;font-size:15px;font-weight:400;color:#F4F3FA;background:#0D0C18;border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:12px 14px;min-height:48px;box-sizing:border-box;transition:border-color .2s}
+.field input:hover,.field select:hover,.field textarea:hover{border-color:rgba(167,139,250,.5)}
+.field textarea{resize:vertical;min-height:120px}
+.foot a{color:#B9B6CC;text-decoration:none}
+.foot a:hover{color:#FFFFFF}
+@media (max-width:720px){.sec{padding:64px 0}.wrap{padding:0 20px}details.acc .body{padding-left:4px}}
+</style>
+</helmet>
+<div style="width:100%;overflow:hidden;background:#07070D">
+
+<!-- HEADER -->
+<header style="position:relative;z-index:2;border-bottom:1px solid rgba(255,255,255,.07);background:rgba(7,7,13,.85)">
+<div class="wrap" style="display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center;padding-top:20px;padding-bottom:20px">
+<a href="Visual-Advocacia.dc.html" aria-label="Futuro Rocha Advogados — início" style="display:block"><img src="/_blob/eb39ddb29649dc0b23e671f546536069" alt="Futuro Rocha Advogados" style="height:40px;width:auto;display:block"></a>
+<nav class="nav" aria-label="Principal" style="display:flex;flex-wrap:wrap;gap:28px;align-items:center"><a href="#">Início</a><a href="Visual-Advocacia.dc.html" class="on" aria-current="page">Advocacia</a><a href="Visual-PI.dc.html">Propriedade Intelectual</a><a href="Visual-PI.dc.html">Raio X BLINVS</a><a href="#contato">Contato</a></nav>
+<a class="btn sm" href="Visual-PI.dc.html" style="border-color:rgba(167,139,250,.6)">Fazer diagnóstico <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</header>
+
+<!-- 01 HERO -->
+<section style="position:relative;overflow:hidden;padding:128px 0 144px;background:#07070D">
+<img src="/_blob/9d6a1f6df0372519bbb016e9aec202dd" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:100% center;display:block;filter:saturate(.85) contrast(1.05)">
+<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,7,13,.97) 0%,rgba(7,7,13,.88) 34%,rgba(7,7,13,.35) 66%,rgba(7,7,13,.5) 100%),linear-gradient(180deg,rgba(7,7,13,.35) 0%,rgba(7,7,13,0) 30%,rgba(7,7,13,0) 70%,#07070D 100%)"></div>
+<div class="wrap" style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:56px;align-items:center">
+<div>
+<div class="eyebrow">Futuro Rocha ADV</div>
+<h1>Advocacia empresarial, civil e digital.</h1>
+<p class="lead" style="margin-top:24px;font-weight:500">Da estruturação das relações à defesa em conflitos.</p>
+<p class="muted" style="margin-top:16px;max-width:560px">Assessoramos empresas, empresários, sócios e profissionais, bem como projetos e novos empreendimentos, na estruturação de relações jurídicas, contratos e prevenção de riscos. Representamos nossos clientes em negociações, procedimentos administrativos e demandas judiciais.</p>
+<div class="btns" style="margin-top:36px"><a class="btn pri" href="#contato">Solicite atendimento <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a><a class="btn" href="#areas">Ver áreas de atuação</a></div>
+</div>
+<div aria-hidden="true"></div>
+</div>
+</section>
+
+<!-- 02 PARA QUEM -->
+<section class="sec" style="padding-top:72px">
+<div class="wrap">
+<div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-end;margin-bottom:40px"><div style="max-width:640px"><div class="eyebrow">Para quem atuamos</div><h2>Diferentes clientes. Diferentes necessidades jurídicas.</h2></div></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px">
+<div class="card hov" style="padding:26px"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1"></rect><path d="M9 7h1M14 7h1M9 11h1M14 11h1M9 15h1M14 15h1M10 21v-3h4v3"></path></svg></div><h3 style="margin-top:22px">Empresas</h3><p class="small" style="margin-top:8px">Assessoria jurídica para a operação, contratos, crescimento e solução de conflitos.</p></div>
+<div class="card hov" style="padding:26px"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"></path><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18.5 14.5c1.6.7 2.6 2.6 3 5.5"></path></svg></div><h3 style="margin-top:22px">Empresários e sócios</h3><p class="small" style="margin-top:8px">Segurança jurídica nas relações societárias, negociações e decisões empresariais.</p></div>
+<div class="card hov" style="padding:26px"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4 4-6 8-6s7 2 8 6"></path></svg></div><h3 style="margin-top:22px">Profissionais</h3><p class="small" style="margin-top:8px">Contratos, responsabilidade, imagem, conteúdo e proteção de direitos e ativos.</p></div>
+<div class="card hov" style="padding:26px"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15c-1 1-2 4-2 6 2 0 5-1 6-2"></path><path d="M9 15l-3-3c1.5-4 5-8.5 12-9 0 7-5 10.5-9 12z"></path><circle cx="14.5" cy="9.5" r="1.5"></circle></svg></div><h3 style="margin-top:22px">Startups e novos negócios</h3><p class="small" style="margin-top:8px">Estruturação jurídica desde as primeiras decisões até o crescimento da operação.</p></div>
+<div class="card hov" style="padding:26px"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7z"></path><path d="M3 7l9 5 9-5M12 12v10"></path></svg></div><h3 style="margin-top:22px">Projetos</h3><p class="small" style="margin-top:8px">Estruturação de relações, contratos e proteção jurídica conforme as características de cada iniciativa.</p></div>
+</div>
+</div>
+</section>
+
+<!-- 03 ÁREAS -->
+<section class="sec line-top" id="areas">
+<div class="wrap" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:56px;align-items:start">
+<div style="max-width:420px">
+<div class="eyebrow">Áreas de atuação</div>
+<h2>Áreas de atuação</h2>
+<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:24px" aria-label="Etapas da atuação">
+<span class="tiny" style="padding:7px 12px;border-radius:999px;border:1px solid rgba(167,139,250,.35);color:#DDD6FE">Estruturar</span><span class="tiny" style="padding:7px 12px;border-radius:999px;border:1px solid rgba(167,139,250,.35);color:#DDD6FE">Contratar</span><span class="tiny" style="padding:7px 12px;border-radius:999px;border:1px solid rgba(167,139,250,.35);color:#DDD6FE">Proteger</span><span class="tiny" style="padding:7px 12px;border-radius:999px;border:1px solid rgba(167,139,250,.35);color:#DDD6FE">Prevenir</span><span class="tiny" style="padding:7px 12px;border-radius:999px;border:1px solid rgba(167,139,250,.35);color:#DDD6FE">Resolver</span><span class="tiny" style="padding:7px 12px;border-radius:999px;border:1px solid rgba(167,139,250,.35);color:#DDD6FE">Defender</span>
+</div>
+<a class="btn" href="#contato" style="margin-top:32px">Fale com um especialista</a>
+</div>
+<div style="border-top:1px solid rgba(255,255,255,.09);min-width:0">
+<details class="acc" open="open"><summary><div style="display:flex;gap:18px;align-items:flex-start"><span class="step-n" style="margin-top:4px">01</span><div><h3>Direito Empresarial e Societário</h3><p class="small" style="margin-top:6px">Estruturação de relações empresariais e societárias, reorganizações e conflitos.</p></div></div><span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></summary><div class="body"><ul class="dots"><li>Planejamento e organização societária</li><li>Acordos de sócios e quotistas</li><li>Entrada e saída de sócios, reorganizações</li><li>Negociações e conflitos societários</li></ul></div></details>
+<details class="acc"><summary><div style="display:flex;gap:18px;align-items:flex-start"><span class="step-n" style="margin-top:4px">02</span><div><h3>Contratos</h3><p class="small" style="margin-top:6px">Elaboração, revisão, negociação e acompanhamento de relações contratuais.</p></div></div><span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></summary><div class="body"><ul class="dots"><li>Contratos civis, empresariais e tecnológicos</li><li>Prestação de serviços e parcerias</li><li>Revisão e negociação contratual</li><li>Inadimplemento e encerramento de relações contratuais</li></ul></div></details>
+<details class="acc"><summary><div style="display:flex;gap:18px;align-items:flex-start"><span class="step-n" style="margin-top:4px">03</span><div><h3>Direito Civil e Obrigações</h3><p class="small" style="margin-top:6px">Atuação em obrigações, relações patrimoniais, cobranças e conflitos privados.</p></div></div><span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></summary><div class="body"><ul class="dots"><li>Cobranças e obrigações</li><li>Relações patrimoniais</li><li>Conflitos decorrentes de relações privadas</li></ul></div></details>
+<details class="acc"><summary><div style="display:flex;gap:18px;align-items:flex-start"><span class="step-n" style="margin-top:4px">04</span><div><h3>Responsabilidade Civil e Indenizações</h3><p class="small" style="margin-top:6px">Atuação em demandas envolvendo responsabilidade, reparação de danos e defesa.</p></div></div><span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></summary><div class="body"><ul class="dots"><li>Responsabilidade civil empresarial</li><li>Responsabilidade civil digital e por sistemas automatizados</li><li>Pedidos e defesa em indenizações</li><li>Defesa em ações de responsabilidade civil</li></ul></div></details>
+<details class="acc"><summary><div style="display:flex;gap:18px;align-items:flex-start"><span class="step-n" style="margin-top:4px">05</span><div><h3>Direito Digital</h3><p class="small" style="margin-top:6px">Plataformas, perfis, conteúdo, imagem, software e fraudes.</p></div></div><span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></summary><div class="body"><ul class="dots"><li>Marco Civil da Internet</li><li>Remoção de conteúdo e perfis falsos</li><li>Recuperação de contas empresariais</li><li>Ações de obrigação de fazer contra plataformas</li><li>Cumprimento de sentença contra big techs</li><li>Termos de uso, políticas e compliance digital</li></ul></div></details>
+<details class="acc"><summary><div style="display:flex;gap:18px;align-items:flex-start"><span class="step-n" style="margin-top:4px">06</span><div><h3>Privacidade e Proteção de Dados</h3><p class="small" style="margin-top:6px">LGPD, políticas, contratos, incidentes e conflitos.</p></div></div><span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></summary><div class="body"><ul class="dots"><li>Programas de adequação à LGPD</li><li>DPO as a Service</li><li>Auditoria de conformidade e relatórios de impacto (DPIA)</li><li>Políticas de privacidade, cookies e cláusulas de dados</li><li>Gestão de incidentes e vazamento de dados</li><li>Treinamentos corporativos</li><li>Defesa em ações judiciais e administrativas</li></ul></div></details>
+<details class="acc"><summary><div style="display:flex;gap:18px;align-items:flex-start"><span class="step-n" style="margin-top:4px">07</span><div><h3>Relações de Consumo</h3><p class="small" style="margin-top:6px">Atuação preventiva, administrativa e judicial.</p></div></div><span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></summary><div class="body"><ul class="dots"><li>Orientação preventiva</li><li>Reclamações e procedimentos administrativos</li><li>Negociação de conflitos</li><li>Ações judiciais e defesa de fornecedores</li></ul></div></details>
+<details class="acc"><summary><div style="display:flex;gap:18px;align-items:flex-start"><span class="step-n" style="margin-top:4px">08</span><div><h3>Contencioso e Solução de Conflitos</h3><p class="small" style="margin-top:6px">Atuação estratégica na prevenção, negociação e condução de conflitos administrativos e judiciais.</p></div></div><span class="pm" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span></summary><div class="body"><ul class="dots"><li>Negociações e soluções extrajudiciais</li><li>Notificações e contranotificações</li><li>Ações judiciais, defesas, recursos e medidas de urgência</li><li>Cumprimento de sentença e decisões judiciais</li></ul></div></details>
+</div>
+</div>
+</section>
+
+<!-- 04 STARTUPS -->
+<section class="sec" style="padding-top:40px">
+<div class="wrap">
+<div style="position:relative;overflow:hidden;border-radius:28px;padding:48px;border:1px solid rgba(167,139,250,.32);background:radial-gradient(70% 120% at 0% 0%,rgba(124,58,237,.24),rgba(7,7,13,0) 55%),linear-gradient(180deg,#100E1E,#0A0914);box-sizing:border-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px;align-items:center">
+<div>
+<div class="ico" style="width:56px;height:56px;border-radius:16px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:28px;height:28px"><path d="M5 15c-1 1-2 4-2 6 2 0 5-1 6-2"></path><path d="M9 15l-3-3c1.5-4 5-8.5 12-9 0 7-5 10.5-9 12z"></path><circle cx="14.5" cy="9.5" r="1.5"></circle></svg></div>
+<div class="eyebrow" style="margin-top:28px">Destaque</div>
+<h2>Startups, inovação e investimentos</h2>
+<p class="muted" style="margin-top:18px">Estruturação jurídica para startups, projetos de inovação e operações de investimento.</p>
+<a class="btn pri" href="#contato" style="margin-top:32px">Falar sobre meu projeto <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+<ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px">
+<li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg>Modelagem jurídica de startups</li>
+<li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg>Acordo de sócios (vesting, cliff, lock-up)</li>
+<li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg>SAFE, mútuo conversível e instrumentos híbridos</li>
+<li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg>Term Sheet para investimento</li>
+<li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg>Planejamento societário para rodadas</li>
+<li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg>Cap table e governança</li>
+<li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg>Estruturação de SPEs e spin-offs</li>
+<li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg>Assessoria jurídica a fundadores</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- 05 COMO ATUAMOS -->
+<section class="sec line-top">
+<div class="wrap">
+<div style="text-align:center;max-width:640px;margin:0 auto 40px"><div class="eyebrow" style="justify-content:center">Método</div><h2>Como atuamos</h2></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px">
+<div class="card hov" style="padding:36px"><div style="font-family:'Sora',sans-serif;font-size:48px;font-weight:600;line-height:1;background:linear-gradient(180deg,#C4B5FD,#6D28D9);-webkit-background-clip:text;background-clip:text;color:transparent">01</div><h3 style="margin-top:28px">Consultivo e preventivo</h3><p class="small" style="margin-top:10px">Estruturação jurídica, contratos, análise de riscos e orientação para decisões e relações do negócio.</p></div>
+<div class="card hov" style="padding:36px"><div style="font-family:'Sora',sans-serif;font-size:48px;font-weight:600;line-height:1;background:linear-gradient(180deg,#C4B5FD,#6D28D9);-webkit-background-clip:text;background-clip:text;color:transparent">02</div><h3 style="margin-top:28px">Extrajudicial e negociação</h3><p class="small" style="margin-top:10px">Negociações, notificações, contranotificações, composição de conflitos e formalização de acordos.</p></div>
+<div class="card hov" style="padding:36px"><div style="font-family:'Sora',sans-serif;font-size:48px;font-weight:600;line-height:1;background:linear-gradient(180deg,#C4B5FD,#6D28D9);-webkit-background-clip:text;background-clip:text;color:transparent">03</div><h3 style="margin-top:28px">Administrativo e judicial</h3><p class="small" style="margin-top:10px">Representação em procedimentos administrativos, ações judiciais, defesas, recursos e cumprimento de decisões.</p></div>
+</div>
+</div>
+</section>
+
+<!-- 06 CONFLITO -->
+<section class="sec" style="background:radial-gradient(50% 70% at 85% 50%,rgba(109,40,217,.18),rgba(7,7,13,0) 70%)">
+<div class="wrap" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:56px;align-items:center">
+<div>
+<div class="eyebrow">Quando o conflito exige atuação jurídica</div>
+<h2>Da negociação ao processo judicial.</h2>
+<p class="muted" style="margin-top:20px">Atuamos na prevenção, negociação e solução de conflitos, bem como em procedimentos administrativos e demandas judiciais envolvendo relações empresariais, civis, contratuais, digitais e de propriedade intelectual.</p>
+<a class="btn pri" href="#contato" style="margin-top:32px">Falar sobre meu caso <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+<ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px">
+<li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg>Contratos e inadimplemento</li>
+<li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg>Cobranças e obrigações</li>
+<li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg>Responsabilidade civil e indenizações</li>
+<li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg>Conflitos empresariais e societários</li>
+<li class="chk"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg>Plataformas e ambiente digital</li>
+<li class="chk" style="border-color:rgba(167,139,250,.4);background:rgba(124,58,237,.1)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg><span>Propriedade Intelectual · <a href="Visual-PI.dc.html">ver PI</a></span></li>
+</ul>
+</div>
+</section>
+
+<!-- 07 DIFERENCIAIS -->
+<section class="sec line-top">
+<div class="wrap">
+<div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-end;margin-bottom:36px"><div><div class="eyebrow">Diferenciais</div><h2>Por que o Futuro Rocha?</h2></div></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px">
+<div class="card hov" style="padding:30px"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5z"></path><path d="m3 13 9 5 9-5"></path></svg></div><h3 style="margin-top:22px">Visão jurídica integrada</h3><p class="small" style="margin-top:8px">Relações, contratos, riscos e ativos analisados em conjunto.</p></div>
+<div class="card hov" style="padding:30px"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"></circle><path d="M8.5 14 7 22l5-3 5 3-1.5-8"></path></svg></div><h3 style="margin-top:22px">Especialização jurídica</h3><p class="small" style="margin-top:8px">Experiência em Direito Empresarial, PI, contratos e tecnologia.</p></div>
+<div class="card hov" style="padding:30px"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M5 7h14"></path><path d="M5 7l-3 6a3 3 0 0 0 6 0zM19 7l-3 6a3 3 0 0 0 6 0z"></path></svg></div><h3 style="margin-top:22px">Consultivo e contencioso</h3><p class="small" style="margin-top:8px">Da prevenção e negociação à atuação administrativa e judicial.</p></div>
+<div class="card hov" style="padding:30px"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="2.5"></circle><circle cx="19" cy="5" r="2.5"></circle><circle cx="19" cy="19" r="2.5"></circle><path d="M7.3 11 16.7 6M7.3 13l9.4 5"></path></svg></div><h3 style="margin-top:22px">Demandas complexas</h3><p class="small" style="margin-top:8px">Atuação em questões que envolvem diferentes áreas do Direito.</p></div>
+</div>
+</div>
+</section>
+
+<!-- 08 PLANOS -->
+<section class="sec" style="overflow:hidden;background:#07070D">
+<img src="/_blob/a2a695bf825e84aea7dd00f0961b6007" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% center;opacity:.55;display:block">
+<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,#07070D 0%,rgba(7,7,13,.72) 22%,rgba(7,7,13,.78) 78%,#07070D 100%)"></div>
+<div class="wrap" style="position:relative">
+<div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-end;margin-bottom:36px">
+<div style="max-width:560px"><div class="eyebrow">Assessoria jurídica recorrente</div><h2>Planos Futuro Rocha</h2></div>
+<p class="muted" style="max-width:460px">Jurídico presente na rotina da empresa, do profissional ou do projeto — com escopo, prioridades e rotina definidos em proposta e contrato.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px">
+<div class="card hov" style="padding:30px;display:flex;flex-direction:column"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true"><circle cx="22" cy="22" r="20" stroke="rgba(167,139,250,.35)"></circle><circle cx="22" cy="22" r="5" fill="#8B5CF6"></circle></svg><h3 style="margin-top:24px;font-size:24px">Origem</h3><div class="tiny" style="margin-top:6px;letter-spacing:.16em;text-transform:uppercase;color:#C4B5FD;font-weight:600">Estruturação inicial</div><p class="small" style="margin-top:14px;flex:1">Primeiras prioridades jurídicas, relações entre participantes, contratos essenciais e proteção de ativos.</p><a class="btn sm" href="#contato" style="margin-top:24px">Solicitar proposta</a></div>
+<div class="card hov" style="padding:30px;display:flex;flex-direction:column"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true"><ellipse cx="22" cy="22" rx="20" ry="9" stroke="rgba(167,139,250,.6)" transform="rotate(-20 22 22)"></ellipse><circle cx="22" cy="22" r="5" fill="#8B5CF6"></circle><circle cx="39" cy="16" r="2.5" fill="#C4B5FD"></circle></svg><h3 style="margin-top:24px;font-size:24px">Órbita</h3><div class="tiny" style="margin-top:6px;letter-spacing:.16em;text-transform:uppercase;color:#C4B5FD;font-weight:600">Organização da operação</div><p class="small" style="margin-top:14px;flex:1">Demandas recorrentes, contratos e relações empresariais ou societárias.</p><a class="btn sm" href="#contato" style="margin-top:24px">Solicitar proposta</a></div>
+<div class="card hov" style="padding:30px;display:flex;flex-direction:column"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" stroke-linecap="round" aria-hidden="true"><path d="M6 38 36 8" stroke="#8B5CF6" stroke-width="2"></path><path d="M22 8h14v14" stroke="#C4B5FD" stroke-width="2"></path><circle cx="6" cy="38" r="3" fill="#8B5CF6"></circle></svg><h3 style="margin-top:24px;font-size:24px">Vetor</h3><div class="tiny" style="margin-top:6px;letter-spacing:.16em;text-transform:uppercase;color:#C4B5FD;font-weight:600">Crescimento e estruturação</div><p class="small" style="margin-top:14px;flex:1">Novas decisões, negociações, mudanças societárias e proteção de ativos</p><a class="btn sm" href="#contato" style="margin-top:24px">Solicitar proposta</a></div>
+<div class="card hov" style="padding:30px;display:flex;flex-direction:column;border-color:rgba(167,139,250,.4);background:linear-gradient(180deg,rgba(124,58,237,.16),rgba(255,255,255,.01))"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true"><path d="M22 4l4.5 13.5L40 22l-13.5 4.5L22 40l-4.5-13.5L4 22l13.5-4.5z" fill="#8B5CF6" opacity=".9"></path><circle cx="36" cy="8" r="2" fill="#C4B5FD"></circle><circle cx="8" cy="36" r="1.5" fill="#C4B5FD"></circle></svg><h3 style="margin-top:24px;font-size:24px">Space</h3><div class="tiny" style="margin-top:6px;letter-spacing:.16em;text-transform:uppercase;color:#C4B5FD;font-weight:600">Operações de maior complexidade</div><p class="small" style="margin-top:14px;flex:1">Acompanhamento mais próximo de demandas simultâneas e de maior complexidade.</p><a class="btn sm pri" href="#contato" style="margin-top:24px">Solicitar proposta</a></div>
+</div>
+<div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;border:1px solid rgba(255,255,255,.08);border-radius:18px;overflow:hidden">
+<div style="padding:28px;border-right:1px solid rgba(255,255,255,.08)"><span class="step-n">01</span><h4 style="margin-top:10px">Diagnóstico</h4><p class="small" style="margin-top:6px">Compreendemos o momento, o contexto e as necessidades.</p></div>
+<div style="padding:28px;border-right:1px solid rgba(255,255,255,.08)"><span class="step-n">02</span><h4 style="margin-top:10px">Definição de escopo</h4><p class="small" style="margin-top:6px">Definimos atividades, prioridades, disponibilidade e condições.</p></div>
+<div style="padding:28px"><span class="step-n">03</span><h4 style="margin-top:10px">Acompanhamento</h4><p class="small" style="margin-top:6px">Organizamos a rotina de atendimento e os encaminhamentos.</p></div>
+</div>
+</div>
+</section>
+
+<!-- 09 QUEM SOMOS -->
+<section class="sec line-top" id="fundador">
+<div class="wrap">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:24px;align-items:stretch">
+<div style="display:flex;flex-direction:column">
+<div class="eyebrow">Quem somos</div>
+<h2>Conheça o Futuro Rocha.</h2>
+<p class="muted" style="margin-top:18px">Atuação empresarial, civil e digital, com experiência em contratos, tecnologia, propriedade intelectual e solução de conflitos.</p>
+<a class="video" href="https://youtu.be/UcP1qHN-ePg?si=f4cObTj58W0LFFu2" style="margin-top:32px;flex:1;min-height:300px;padding:32px">
+<div aria-hidden="true" style="position:absolute;top:24px;left:24px"><img src="/_blob/eb39ddb29649dc0b23e671f546536069" alt="" style="height:26px;width:auto;opacity:.9;display:block"></div>
+<span class="play" style="position:relative"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></span>
+<span style="position:relative;text-align:center"><span style="display:block;font-family:'Sora',sans-serif;font-weight:600;font-size:18px">Vídeo institucional 2026</span><span class="small" style="display:block;margin-top:4px">Assista no YouTube</span></span>
+</a>
+</div>
+<div class="card" style="padding:0;overflow:hidden;display:flex;flex-wrap:wrap">
+<img src="/_blob/1a64fe98f14ddbe6c6b30eeeb7ab75f2" alt="Arno Ribeiro Rocha, advogado e fundador" style="flex:1 1 220px;width:220px;min-height:420px;object-fit:cover;object-position:top;display:block">
+<div style="flex:1 1 260px;padding:36px;box-sizing:border-box">
+<div class="tiny" style="letter-spacing:.18em;text-transform:uppercase;color:#A78BFA;font-weight:600">Nosso fundador</div>
+<h3 style="margin-top:14px;font-size:26px">Arno Ribeiro Rocha</h3>
+<div class="small" style="margin-top:6px;color:#DDD9EC;font-weight:500">Advogado, pesquisador e autor</div>
+<ul class="dots" style="margin-top:20px"><li>Mestrado em Propriedade Intelectual e Transferência de Tecnologia para Inovação — UFSC</li><li>MBA Internacional em Gestão Executiva — Faculdade Damásio</li><li>Formação em Direito para Startups — FGV</li><li>Graduação em Direito — IPA</li></ul>
+<p class="small" style="margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,.08)">Mais de 15 anos de atuação jurídica, com experiência em propriedade intelectual, contratos e litígios civis e empresariais, além de tecnologia, inovação e estruturação jurídica de empresas e projetos.</p>
+</div>
+</div>
+</div>
+<div style="margin-top:24px;border-radius:20px;padding:32px 36px;display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center;border:1px solid rgba(167,139,250,.3);background:linear-gradient(90deg,rgba(124,58,237,.18),rgba(124,58,237,.04));box-sizing:border-box">
+<div style="flex:1 1 440px;display:flex;gap:20px;align-items:center"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m11 17 2 2a1.4 1.4 0 0 0 2-2"></path><path d="m14 14 2.5 2.5a1.4 1.4 0 0 0 2-2L15 11"></path><path d="M21 8.5 17.5 5 13 9.5"></path><path d="M3 8.5 6.5 5l5 5-2 2a1.4 1.4 0 0 1-2-2"></path><path d="m3 8.5 5.5 5.5"></path></svg></div><div><h3>Atuação em parceria</h3><p class="small" style="margin-top:6px">Expertise complementar para escritórios, departamentos jurídicos, consultorias, empresas e profissionais — com escopo e responsabilidades definidos.</p></div></div>
+<a class="btn" href="#contato">Fale conosco sobre parcerias <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</section>
+
+<!-- 10 CONTATO -->
+<section class="sec" id="contato" style="background:radial-gradient(55% 60% at 10% 30%,rgba(109,40,217,.2),rgba(7,7,13,0) 70%)">
+<div class="wrap" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:56px;align-items:start">
+<div>
+<div class="eyebrow">Contato</div>
+<h2>Converse com o Futuro Rocha.</h2>
+<p class="muted" style="margin-top:20px">Conte brevemente sua necessidade. A partir das informações iniciais, identificaremos a natureza da demanda e a melhor forma de direcionar o atendimento.</p>
+<div style="display:flex;flex-direction:column;gap:14px;margin-top:32px">
+<a href="mailto:contato@futurorocha.com.br" style="display:flex;gap:14px;align-items:center;color:#E4E1F2;text-decoration:none"><span class="ico" style="width:44px;height:44px;border-radius:12px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:20px;height:20px"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg></span>contato@futurorocha.com.br</a>
+<div style="display:flex;gap:14px;align-items:center;color:#E4E1F2"><span class="ico" style="width:44px;height:44px;border-radius:12px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:20px;height:20px"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"></path><circle cx="12" cy="9" r="2.5"></circle></svg></span>Florianópolis - SC</div>
+</div>
+<a class="btn" href="#" style="margin-top:32px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.2-4.5A9 9 0 1 1 21 12z"></path></svg>Atendimento pelo WhatsApp</a>
+</div>
+<form class="card" style="padding:36px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;border-color:rgba(167,139,250,.25)">
+<label class="field">Nome *<input type="text" name="nome" autocomplete="name" required="required"></label>
+<label class="field">E-mail *<input type="email" name="email" autocomplete="email" required="required"></label>
+<label class="field">Telefone<input type="tel" name="telefone" autocomplete="tel"></label>
+<label class="field">Empresa / atividade / projeto<input type="text" name="empresa" autocomplete="organization"></label>
+<label class="field" style="grid-column:1 / -1">Assunto<select name="assunto"><option>Advocacia</option><option>Contratos</option><option>Ação ou conflito judicial</option><option>Planos de assessoria</option><option>Parcerias profissionais</option><option>Outros</option></select></label>
+<label class="field" style="grid-column:1 / -1">Como podemos ajudar? *<textarea name="mensagem" rows="4" required="required"></textarea></label>
+<p class="tiny" style="grid-column:1 / -1;display:flex;gap:10px;align-items:flex-start"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none;margin-top:1px"><rect x="4" y="11" width="16" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg><span>Evite enviar documentos ou informações sensíveis neste primeiro contato. <a href="#">Política de Privacidade</a></span></p>
+<div style="grid-column:1 / -1"><button type="button" class="btn pri" style="width:100%">Enviar mensagem <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button></div>
+</form>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot" style="border-top:1px solid rgba(255,255,255,.07);padding:48px 0 28px">
+<div class="wrap">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;align-items:start">
+<div><img src="/_blob/49a973fa691e3dd78440b7579b33fe29" alt="Futuro Rocha Advogados e Futuro Rocha Propriedade Intelectual" style="width:240px;height:auto;display:block"><p class="tiny" style="margin-top:16px;max-width:260px">Direito. Tecnologia. Negócios. Para o seu futuro.</p></div>
+<div><div class="tiny" style="letter-spacing:.18em;text-transform:uppercase;color:#A78BFA;font-weight:600;margin-bottom:14px">Contato</div><div class="small" style="display:flex;flex-direction:column;gap:8px"><a href="mailto:contato@futurorocha.com.br">contato@futurorocha.com.br</a><span>Florianópolis · SC</span><a href="#">WhatsApp</a></div></div>
+<div><div class="tiny" style="letter-spacing:.18em;text-transform:uppercase;color:#A78BFA;font-weight:600;margin-bottom:14px">Redes</div><div class="small" style="display:flex;flex-direction:column;gap:8px"><a href="https://www.youtube.com/@futurorocha/featured">YouTube</a><a href="#">LinkedIn</a><a href="#">Instagram</a></div></div>
+<div><div class="tiny" style="letter-spacing:.18em;text-transform:uppercase;color:#A78BFA;font-weight:600;margin-bottom:14px">Institucional</div><div class="small" style="display:flex;flex-direction:column;gap:8px"><a href="#">Privacidade</a><a href="#">Termos de Uso</a></div></div>
+</div>
+<div class="tiny" style="margin-top:32px;padding-top:20px;border-top:1px solid rgba(255,255,255,.07)">© [ano automático] Futuro Rocha. Todos os direitos reservados.</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":8000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

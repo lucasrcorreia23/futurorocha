@@ -1,0 +1,61 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 128px 0 144px;
+  background: var(--bg);
+}
+
+.img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.pi .img {
+  object-position: 15% center;
+}
+.adv .img {
+  object-position: 100% center;
+  filter: saturate(0.85) contrast(1.05);
+}
+
+// Substitui a imagem enquanto ela não é enviada: brilho roxo à direita.
+.glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(55% 70% at 78% 40%, rgba(124, 58, 237, 0.38), rgba(7, 7, 13, 0) 70%),
+    radial-gradient(30% 40% at 92% 80%, rgba(167, 139, 250, 0.18), rgba(7, 7, 13, 0) 70%);
+}
+.adv .glow {
+  background: radial-gradient(55% 70% at 80% 35%, rgba(109, 40, 217, 0.32), rgba(7, 7, 13, 0) 70%),
+    radial-gradient(35% 45% at 95% 85%, rgba(196, 181, 253, 0.12), rgba(7, 7, 13, 0) 70%);
+}
+
+.shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(7, 7, 13, 0.97) 0%, rgba(7, 7, 13, 0.88) 34%, rgba(7, 7, 13, 0.35) 66%, rgba(7, 7, 13, 0.5) 100%),
+    linear-gradient(180deg, rgba(7, 7, 13, 0.35) 0%, rgba(7, 7, 13, 0) 30%, rgba(7, 7, 13, 0) 70%, #07070d 100%);
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(70% 70% at 70% 45%, #000 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(70% 70% at 70% 45%, #000 30%, transparent 75%);
+}
+
+.content {
+  position: relative;
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding: 72px 0 88px;
+  }
+}

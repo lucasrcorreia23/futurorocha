@@ -1,0 +1,44 @@
+.left {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.video {
+  margin-top: 32px;
+  flex: 1;
+  min-height: 300px;
+}
+
+.founder {
+  --pad: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo {
+  flex: 1 1 220px;
+  width: 220px;
+  min-height: 420px;
+}
+
+.body {
+  flex: 1 1 260px;
+  padding: 36px;
+}
+
+.bio {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 720px) {
+  .photo {
+    min-height: 340px;
+  }
+  .body {
+    padding: 24px;
+  }
+}

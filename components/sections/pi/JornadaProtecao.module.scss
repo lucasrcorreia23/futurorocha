@@ -1,0 +1,31 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: none;
+  font-family: var(--font-sora), sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.adv {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.plus {
+  color: var(--violet-400);
+}
+
+.pi {
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: var(--violet-600);
+}

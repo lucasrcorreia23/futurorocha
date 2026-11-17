@@ -1,0 +1,36 @@
+.wordmark {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.name {
+  font-family: var(--font-sora), sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.sub {
+  margin-top: 0.35em;
+  font-size: 0.42em;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--violet-300);
+}
+
+.combined {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.divider {
+  width: 1px;
+  align-self: stretch;
+  background: rgba(255, 255, 255, 0.15);
+}

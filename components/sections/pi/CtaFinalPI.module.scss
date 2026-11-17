@@ -1,0 +1,56 @@
+.box {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  padding: 56px 48px;
+  text-align: center;
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  background: radial-gradient(70% 120% at 50% 0%, rgba(124, 58, 237, 0.45), rgba(7, 7, 13, 0) 65%),
+    linear-gradient(180deg, #120f24, #08070f);
+}
+
+.grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(60% 80% at 50% 0%, #000, transparent 80%);
+  -webkit-mask-image: radial-gradient(60% 80% at 50% 0%, #000, transparent 80%);
+}
+
+.img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  object-position: center bottom;
+  opacity: 0.6;
+  display: block;
+}
+
+.shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 7, 15, 0.2) 0%, rgba(8, 7, 15, 0.55) 55%, rgba(8, 7, 15, 0.1) 100%);
+}
+
+.content {
+  position: relative;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: clamp(32px, 4.2vw, 52px);
+}
+
+@media (max-width: 720px) {
+  .box {
+    padding: 40px 20px;
+    border-radius: 22px;
+  }
+}

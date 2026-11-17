@@ -1,0 +1,119 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "Advocacia-sem-fotos.dc.html": {
+      "expand": "fill",
+      "h": 5580,
+      "is_interactive": true,
+      "title": "Página — Advocacia (/advocacia) · sem fotos",
+      "w": 1440,
+      "x": -3979,
+      "y": 111
+    },
+    "Advocacia.dc.html": {
+      "expand": "fill",
+      "h": 5580,
+      "is_interactive": true,
+      "title": "Página — Advocacia (/advocacia) · com fotos",
+      "w": 1440,
+      "x": 1520,
+      "y": 0
+    },
+    "Main-sem-fotos.dc.html": {
+      "expand": "fill",
+      "h": 5651,
+      "is_interactive": true,
+      "title": "Página — Propriedade Intelectual (/propriedade-intelectual) · sem fotos",
+      "w": 1440,
+      "x": -5499,
+      "y": 111
+    },
+    "Main.dc.html": {
+      "expand": "fill",
+      "h": 5639,
+      "is_interactive": true,
+      "title": "Página — Propriedade Intelectual (/propriedade-intelectual) · com fotos",
+      "w": 1440,
+      "x": 0,
+      "y": 0
+    },
+    "Visual-Advocacia.dc.html": {
+      "expand": "fill",
+      "h": 7785,
+      "is_interactive": true,
+      "title": "Visual — Advocacia (/advocacia)",
+      "w": 1440,
+      "x": 5922,
+      "y": 0
+    },
+    "Visual-PI.dc.html": {
+      "expand": "fill",
+      "h": 7689,
+      "is_interactive": true,
+      "title": "Visual — Propriedade Intelectual (/propriedade-intelectual)",
+      "w": 1440,
+      "x": 4402,
+      "y": 0
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-10-21T17:40:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "decisoes": {
+      "maxH": 900,
+      "text": "Critérios da reorganização\n\n• Sem estética: só ordem e hierarquia do conteúdo.\n• Fonte: caderno do cliente (textos prioritários) + site atual (listas de serviços, jornada, depoimentos, mídia).\n• PI recebe tudo de ativos intelectuais: marcas, software, autoral/economia criativa, games, IA, inovação/fomento e o FPL.\n• Advocacia recebe os serviços tradicionais: empresarial/societário, contratos, civil, resp. civil, digital, LGPD, consumo, contencioso + startups/investimentos e planos.\n• Removido (orientação do caderno): Valuation/valoração de ativos como serviço, preços, horas, bônus e itens 'ilimitados' dos planos.\n• Vídeo do FPL: pendente de envio pelo cliente.",
+      "w": 440,
+      "x": 3040,
+      "y": 0
+    },
+    "links": {
+      "fill": "blue",
+      "maxH": 700,
+      "text": "**Links de vídeos/imagens:**\n\n- https://drive.google.com/drive/folders/15DO0gpdnikiPrboHKnYdhVOpdxqR-tfy?usp=sharing",
+      "w": 440,
+      "x": 7551,
+      "y": 10
+    },
+    "note-ckm2cp": {
+      "kind": "title1",
+      "maxW": 2960,
+      "text": "Futuro Rocha — wireframe de conteúdo (2 páginas)",
+      "w": 240,
+      "x": -5499,
+      "y": -238
+    },
+    "titulo": {
+      "kind": "title1",
+      "maxW": 2960,
+      "text": "Futuro Rocha — 2 páginas (com imagens e videos)",
+      "w": 240,
+      "x": 0,
+      "y": -300
+    },
+    "titulo-visual": {
+      "kind": "title1",
+      "maxW": 2960,
+      "text": "Futuro Rocha — proposta visual (2 páginas)",
+      "w": 240,
+      "x": 4402,
+      "y": -300
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "Advocacia.dc.html",
+    "Main-sem-fotos.dc.html",
+    "Advocacia-sem-fotos.dc.html",
+    "Visual-PI.dc.html",
+    "Visual-Advocacia.dc.html"
+  ],
+  "pages": [],
+  "title": "Wireframe Futuro Rocha — ADV e PI"
+}

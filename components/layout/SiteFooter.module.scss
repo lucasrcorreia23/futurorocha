@@ -1,0 +1,29 @@
+.foot {
+  border-top: 1px solid var(--line);
+  padding: 48px 0 28px;
+
+  a {
+    color: var(--text-list);
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.title {
+  margin-bottom: 14px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.copy {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}

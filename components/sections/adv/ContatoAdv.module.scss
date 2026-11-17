@@ -1,0 +1,19 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.line {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  color: var(--text-lead);
+  text-decoration: none;
+  word-break: break-word;
+
+  &:hover {
+    color: #fff;
+  }
+}

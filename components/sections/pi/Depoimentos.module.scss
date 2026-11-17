@@ -1,0 +1,41 @@
+.location {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.item {
+  --pad: 32px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.quote {
+  margin: 18px 0 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-lead);
+}
+
+.author {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.photo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.6);
+}
+
+.name {
+  display: block;
+  font-weight: 600;
+}

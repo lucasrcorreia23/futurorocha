@@ -1,11 +1,23 @@
 import Script from "next/script";
-import { Inter, Sora } from "next/font/google";
+import localFont from "next/font/local";
 import WhatsAppButton from "../components/layout/WhatsAppButton";
 import { analytics } from "../data/site";
 import "../styles/globals.scss";
 
-const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600"], variable: "--font-inter", display: "swap" });
-const sora = Sora({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-sora", display: "swap" });
+// Fontes servidas pelo próprio site (subset latin, arquivos variáveis do Google Fonts).
+// O next/font/google do Next 13.2 quebra o build quando o Google devolve URLs sem extensão.
+const inter = localFont({
+  src: "../styles/fonts/inter-latin-var.woff2",
+  weight: "400 600",
+  variable: "--font-inter",
+  display: "swap",
+});
+const sora = localFont({
+  src: "../styles/fonts/sora-latin-var.woff2",
+  weight: "400 700",
+  variable: "--font-sora",
+  display: "swap",
+});
 
 export default function App({ Component, pageProps }) {
   return (

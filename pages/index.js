@@ -1,6 +1,6 @@
-import PiPage from "../components/pages/PiPage";
+import AdvocaciaPage from "../components/pages/AdvocaciaPage";
 
-// A home exibe a página de Propriedade Intelectual (decisão do cliente).
+// A home exibe a página de Advocacia (decisão do cliente).
 export default function Home() {
-  return <PiPage />;
+  return <AdvocaciaPage />;
 }

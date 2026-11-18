@@ -31,7 +31,7 @@ export const organizationJsonLd = {
 
 /**
  * Metadados por página.
- * @param {string} path  caminho canônico (ex.: "/" ou "/advocacia")
+ * @param {string} path  caminho canônico (ex.: "/" ou "/propriedade-intelectual")
  * @param {object[]} jsonLd  blocos JSON-LD adicionais da página
  */
 export default function Seo({ title, description, path = "/", jsonLd = [] }) {

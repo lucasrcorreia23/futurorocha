@@ -60,7 +60,7 @@ export default function AdvocaciaPage() {
 
   return (
     <>
-      <Seo title={TITLE} description={DESCRIPTION} path="/advocacia" jsonLd={jsonLd} />
+      <Seo title={TITLE} description={DESCRIPTION} path="/" jsonLd={jsonLd} />
       <a className="skip-link" href="#conteudo">
         Pular para o conteúdo
       </a>

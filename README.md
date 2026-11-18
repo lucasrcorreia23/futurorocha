@@ -4,8 +4,8 @@ Site institucional em Next.js 13 (pages router), com duas páginas:
 
 | Rota | Conteúdo |
 | --- | --- |
-| `/` e `/propriedade-intelectual` | Futuro Rocha PI (canonical em `/`) |
-| `/advocacia` | Futuro Rocha ADV, com formulário de contato (`#contato`) |
+| `/` e `/advocacia` | Futuro Rocha ADV, com formulário de contato (`#contato`); canonical em `/` |
+| `/propriedade-intelectual` | Futuro Rocha PI |
 
 O design de referência fica em `docs/design/`: as pranchas `Visual-*.dc.html` valem como layout final, e os wireframes como referência de conteúdo.
 
@@ -36,4 +36,4 @@ O e-mail chega com o assunto `[Site] <assunto> — <nome>`, e o "Responder" já 
 
 A rota tem validação, honeypot anti-spam e limite de 5 envios a cada 10 minutos por IP. Sem as variáveis, ou se o envio falhar, o formulário mostra links para WhatsApp e e-mail.
 
-O assunto pode vir pré-selecionado pela URL: `/advocacia?assunto=pi#contato`. Os valores aceitos são `pi`, `adv`, `planos` e `parcerias`.
+O assunto pode vir pré-selecionado pela URL: `/?assunto=pi#contato`. Os valores aceitos são `pi`, `adv`, `planos` e `parcerias`.

@@ -36,11 +36,11 @@ const jsonLd = [
   },
 ];
 
-// Página Propriedade Intelectual — renderizada em "/" e em "/propriedade-intelectual" (canonical "/").
+// Página Propriedade Intelectual — renderizada em "/propriedade-intelectual".
 export default function PiPage() {
   return (
     <>
-      <Seo title={TITLE} description={DESCRIPTION} path="/" jsonLd={jsonLd} />
+      <Seo title={TITLE} description={DESCRIPTION} path="/propriedade-intelectual" jsonLd={jsonLd} />
       <a className="skip-link" href="#conteudo">
         Pular para o conteúdo
       </a>

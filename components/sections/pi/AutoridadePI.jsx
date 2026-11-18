@@ -56,7 +56,7 @@ export default function AutoridadePI() {
                 Advogado, pesquisador e autor. Mestre em Propriedade Intelectual e Transferência de Tecnologia para Inovação pela
                 UFSC, com mais de 15 anos de atuação jurídica.
               </p>
-              <Link className="btn sm" href="/advocacia#fundador" style={{ marginTop: 22, alignSelf: "flex-start" }}>
+              <Link className="btn sm" href="/#fundador" style={{ marginTop: 22, alignSelf: "flex-start" }}>
                 Conheça o fundador
               </Link>
             </div>

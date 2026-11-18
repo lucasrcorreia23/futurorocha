@@ -7,14 +7,14 @@ import styles from "./SiteHeader.module.scss";
 
 /**
  * Cabeçalho comum às duas páginas.
- * O item ativo vem da marca (brand), não do pathname: em "/" a página exibida é a de PI.
+ * O item ativo vem da marca (brand), não do pathname: "/" e "/advocacia" exibem a página de Advocacia.
  * standalone: páginas sem as seções #raio-x/#contato (ex.: 404) usam links absolutos.
  */
 export default function SiteHeader({ brand = "pi", standalone = false }) {
   const [open, setOpen] = useState(false);
   const isPi = brand === "pi";
   const raioX = isPi && !standalone ? "#raio-x" : "/propriedade-intelectual#raio-x";
-  const contato = standalone ? "/advocacia#contato" : "#contato";
+  const contato = standalone ? "/#contato" : "#contato";
 
   useEffect(() => {
     if (!open) return undefined;
@@ -26,8 +26,7 @@ export default function SiteHeader({ brand = "pi", standalone = false }) {
   const close = () => setOpen(false);
 
   const items = [
-    { href: "/", label: "Início" },
-    { href: "/advocacia", label: "Advocacia", active: !standalone && brand === "adv" },
+    { href: "/", label: "Advocacia", active: !standalone && brand === "adv" },
     { href: "/propriedade-intelectual", label: "Propriedade Intelectual", active: !standalone && isPi },
     { href: raioX, label: "Raio X BLINVS" },
     { href: contato, label: "Contato" },
@@ -37,8 +36,8 @@ export default function SiteHeader({ brand = "pi", standalone = false }) {
     <header className={`${styles.header} ${isPi ? styles.pi : styles.adv}`}>
       <div className={`wrap ${styles.inner}`}>
         <Link
-          href={isPi ? "/" : "/advocacia"}
-          aria-label={isPi ? "Futuro Rocha Propriedade Intelectual — início" : "Futuro Rocha Advogados — início"}
+          href={isPi ? "/propriedade-intelectual" : "/"}
+          aria-label={isPi ? "Futuro Rocha Propriedade Intelectual" : "Futuro Rocha Advogados — início"}
           className={styles.logo}
         >
           <Logo brand={brand} height={isPi ? 52 : 40} decorative />

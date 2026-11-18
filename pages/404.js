@@ -19,8 +19,8 @@ export default function NotFound() {
             O endereço pode ter mudado. Escolha uma das áreas abaixo para continuar.
           </p>
           <div className="btns" style={{ marginTop: 32 }}>
-            <Link className="btn pri" href="/">Propriedade Intelectual</Link>
-            <Link className="btn" href="/advocacia">Advocacia</Link>
+            <Link className="btn pri" href="/">Advocacia</Link>
+            <Link className="btn" href="/propriedade-intelectual">Propriedade Intelectual</Link>
           </div>
         </div>
       </main>

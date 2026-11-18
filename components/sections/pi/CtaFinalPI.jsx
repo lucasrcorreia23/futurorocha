@@ -28,7 +28,7 @@ export default function CtaFinalPI() {
             <div className="btns" style={{ justifyContent: "center", marginTop: 36 }}>
               <Link
                 className="btn pri"
-                href="/advocacia?assunto=pi#contato"
+                href="/?assunto=pi#contato"
                 onClick={() => track("cta_click", { cta: "solicite_analise_pi" })}
               >
                 Solicite uma análise <Icon name="arrow" size={16} strokeWidth={2} />

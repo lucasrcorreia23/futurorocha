@@ -44,7 +44,7 @@ export default function JornadaProtecao() {
               </p>
             </div>
           </div>
-          <Link className="btn" href="/advocacia#conflitos">
+          <Link className="btn" href="/#conflitos">
             Conheça nossa atuação em conflitos <Icon name="arrow" size={16} strokeWidth={2} />
           </Link>
         </div>

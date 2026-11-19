@@ -40,6 +40,7 @@ export default function ContactForm({ assunto, onAssuntoChange, mensagemInicial 
       if (res.ok && json.ok) {
         setStatus("success");
         track("form_submit", { form: "contato", assunto: data.assunto });
+        if (typeof window.fbq === "function") window.fbq("track", "Lead", { content_category: data.assunto });
         form.reset();
         setMensagem("");
         return;

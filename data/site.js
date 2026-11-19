@@ -40,6 +40,7 @@ export const links = {
 export const analytics = {
   ga4: "G-KK8NV0W3NW",
   gtm: "GTM-T2498J63",
+  metaPixel: "1997358960948947",
 };
 
 

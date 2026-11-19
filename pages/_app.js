@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 import Script from "next/script";
 import localFont from "next/font/local";
 import WhatsAppButton from "../components/layout/WhatsAppButton";
@@ -20,6 +22,17 @@ const sora = localFont({
 });
 
 export default function App({ Component, pageProps }) {
+  const router = useRouter();
+
+  // O PageView inicial sai do código base do pixel; aqui contamos as navegações internas do Next.
+  useEffect(() => {
+    const onRouteChange = () => {
+      if (typeof window.fbq === "function") window.fbq("track", "PageView");
+    };
+    router.events.on("routeChangeComplete", onRouteChange);
+    return () => router.events.off("routeChangeComplete", onRouteChange);
+  }, [router.events]);
+
   return (
     <>
       {/* As variáveis de fonte precisam estar no :root para valerem em todo o documento (inclusive body). */}
@@ -46,6 +59,21 @@ export default function App({ Component, pageProps }) {
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','${analytics.gtm}');
+        `}
+      </Script>
+
+      <Script id="meta-pixel" strategy="afterInteractive">
+        {`
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window,document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '${analytics.metaPixel}');
+          fbq('track', 'PageView');
         `}
       </Script>
 

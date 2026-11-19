@@ -21,6 +21,16 @@ export default function Document() {
             title="Google Tag Manager"
           />
         </noscript>
+        <noscript>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            alt=""
+            src={`https://www.facebook.com/tr?id=${analytics.metaPixel}&ev=PageView&noscript=1`}
+          />
+        </noscript>
         <Main />
         <NextScript />
       </body>
